@@ -1,0 +1,41 @@
+{
+  "benchmark": "SPY",
+  "commission_bps": 5.0,
+  "end": "2026-10-04",
+  "feature_set": "all",
+  "horizon": 5,
+  "max_positions": 3,
+  "max_weight": 0.34,
+  "models": [
+    "linear",
+    "random_forest",
+    "gradient_boosting",
+    "xgboost"
+  ],
+  "probability_threshold": 0.55,
+  "rebalance_days": 5,
+  "return_threshold": 0.0,
+  "seed": 42,
+  "select_features": 24,
+  "sizing": "equal",
+  "slippage_bps": 5.0,
+  "start": "2015-01-01",
+  "starting_capital": 100000.0,
+  "strategy": "ranking",
+  "target_threshold": 0.0,
+  "test_start": "2024-01-01",
+  "train_min_dates": 756,
+  "training_window": 0,
+  "universe": [
+    "AAPL",
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "JPM",
+    "XOM",
+    "JNJ",
+    "WMT"
+  ],
+  "validation_start": "2020-01-01",
+  "walk_forward_dates": 126
+}
