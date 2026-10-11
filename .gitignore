@@ -2,6 +2,6 @@
 __pycache__/
 *.pyc
 data/*.sqlite*
-models/
-results/
+/models/
+/results/
 *.log
