@@ -52,11 +52,11 @@ def train_research(config,run,refresh=False):
     missing=set(config.models)-set(available_models())
     if missing:raise ValueError(f'Model dependencies unavailable: {sorted(missing)}')
     folder=ROOT/'models'/run;result=ROOT/'results'/run
-    if (folder/'manifest.json').exists():raise FileExistsError('Run already frozen. Reuse it; never overwrite an evaluated artifact. Choose a genuinely new protocol/run if needed; holdout audit persists.')
+    if folder.exists() or result.exists():raise FileExistsError('Run already frozen. Reuse it; never overwrite an evaluated artifact. Choose a genuinely new protocol/run if needed; holdout audit persists.')
     if (ROOT/'models'/'holdout_audit.json').exists():
         LOG.warning('Holdout has been viewed before. A new run is exploratory; it is NOT an independent untouched test.')
     data=MarketData().universe(config,refresh);panel,features=make_dataset(data,config)
-    folder.mkdir(parents=True,exist_ok=True);result.mkdir(parents=True,exist_ok=True)
+    folder.mkdir(parents=True,exist_ok=False);result.mkdir(parents=True,exist_ok=False)
     # Immutable research snapshot survives later live cache refreshes.
     joblib.dump(data,folder/'market_snapshot.joblib',compress=3)
     rows=[];details={};out_predictions={};all_folds={}
@@ -78,11 +78,11 @@ def train_research(config,run,refresh=False):
     if config.training_window:
         available=sorted(panel.loc[mature,'date'].unique())[-config.training_window:];mature &= panel.date.isin(available)
     frozen=fit_pair(panel[mature],features,selected,config)
-    manifest={'run':run,'status':'selection_frozen_test_unseen','frozen_at':datetime.now(timezone.utc).isoformat(),'config':config.dict(),'selected_model':selected,'selection_rule':'highest costed validation Sharpe; RMSE tie-break','features':features,'data_hash':data_hash(data),'config_hash':fingerprint(config.dict()),'versions':versions(),'source_hash':source_hash(),'train_period':[str(panel.loc[mature,'date'].min().date()),str(panel.loc[mature,'date'].max().date())],'last_training_label_end':str(panel.loc[mature,'target_end'].max().date()),'validation_period':[config.validation_start,config.test_start],'test_period':[config.test_start,config.end],'prior_holdout_viewed':(ROOT/'models'/'holdout_audit.json').exists(),'hyperparameters':{task:frozen[task].named_steps['model'].get_params() for task in frozen},'validation':details,'folds':all_folds}
+    manifest={'run':run,'status':'selection_frozen_historical_exploratory','frozen_at':datetime.now(timezone.utc).isoformat(),'config':config.dict(),'selected_model':selected,'selection_rule':'highest costed validation Sharpe; RMSE tie-break','features':features,'data_hash':data_hash(data),'config_hash':fingerprint(config.dict()),'versions':versions(),'source_hash':source_hash(),'train_period':[str(panel.loc[mature,'date'].min().date()),str(panel.loc[mature,'date'].max().date())],'last_training_label_end':str(panel.loc[mature,'target_end'].max().date()),'validation_period':[config.validation_start,config.test_start],'test_period':[config.test_start,config.end],'prior_holdout_viewed':(ROOT/'models'/'holdout_audit.json').exists(),'hyperparameters':{task:frozen[task].named_steps['model'].get_params() for task in frozen},'validation':details,'folds':all_folds}
     # Freeze metadata before any holdout predictions. No feature importance on test used for selection.
     save_json(folder/'manifest.json',manifest);joblib.dump({'config':config,'features':features,'selected_model':selected,'frozen_pair':frozen},folder/'bundle.joblib')
     table.to_csv(result/'model_comparison.csv',index=False);save_json(result/'validation.json',details)
-    save_json(ROOT/'models'/'latest.json',{'run':run});print(table.to_string(index=False));print(f'Frozen model: {selected}; final test remains unassessed. Run python3 backtest.py --run {run}')
+    save_json(ROOT/'models'/'latest.json',{'run':run});print(table.to_string(index=False));print(f'Frozen model: {selected}; no independence implied. Run python3 backtest.py --run {run}')
     return manifest
 
 def assess(run):
@@ -91,6 +91,10 @@ def assess(run):
     manifest=json.loads((folder/'manifest.json').read_text());bundle=load_bundle(run);c=bundle['config']
     if (result/'assessment.json').exists():
         print('Using existing frozen assessment; no reselection/re-evaluation.');return json.loads((result/'assessment.json').read_text())
+    if manifest.get('source_hash')!=source_hash():
+        raise ValueError('Source changed or legacy source hash missing; refusing new assessment')
+    if manifest.get('versions')!=versions():
+        raise ValueError('Dependencies changed since freeze; refusing new assessment')
     snapshot=folder/'market_snapshot.joblib'
     data=joblib.load(snapshot) if snapshot.exists() else MarketData().universe(c)
     if data_hash(data)!=manifest['data_hash']:raise ValueError('Market data changed since freeze. Refusing incomparable final test.')

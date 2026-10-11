@@ -27,8 +27,9 @@ class YahooProvider:
         cols=['open','high','low','close','volume','raw_open','raw_high','raw_low','raw_close','adj_close','dividends','splits']
         df=df[cols].replace([np.inf,-np.inf],np.nan)
         valid=(df[['open','high','low','close','volume']].notna().all(axis=1)&(df[['open','high','low','close']]>0).all(axis=1)&(df.volume>=0))
-        if not valid.all():LOG.warning('%s dropping %d invalid OHLCV rows; never filling',symbol,(~valid).sum())
-        return df.loc[valid].loc[~df.index.duplicated(keep='last')].sort_index()
+        if not valid.all() or not df.index.is_unique:
+            raise DataError(f'{symbol}: invalid or duplicate OHLCV rows; refusing silent repair')
+        return df.sort_index()
 class MarketData:
     def __init__(self,provider=None,cache_path=None):
         self.provider=provider or YahooProvider();self.cache=PriceCache(cache_path or ROOT/'data'/'prices.sqlite')

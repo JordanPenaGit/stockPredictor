@@ -19,3 +19,13 @@ Sparse prediction schedules could silently skip scheduled decisions; temporal pe
 Yahoo retrospective adjusted OHLC is a total-return research proxy, NOT historical executable quotes or point-in-time data. Present-day eight-stock universe excludes delistings and creates selection/survivorship bias. No free cached source fixes historical membership, delisting returns, timestamped revisions, variable spreads, impact, auction liquidity, taxes or borrow. Missing held prices must fail; no invented liquidation. Historical costs are assumptions, fractional adjusted units not actual shares.
 
 No reliable predictive edge or profitability established. See RESEARCH_REPORT.md for development evidence and read-only legacy assessment.
+
+## Phase B verified disposition
+The previously pending reviewer fixes now pass 49 tests. Fixed benchmark-session
+cadence errors explicitly on missing scheduled signals; dense off-cadence forecasts
+are informational by contract, terminal signal is liquidation boundary only.
+Integrated future-price mutation leaves earlier fitted predictions and trades
+unchanged. Frozen refits clone entire pipelines; new assessment requires matching
+source/dependency versions. Current refits use unique separate result directories.
+Uniformly stale current market dates (>7 calendar days) fail; missing candidates
+fail before fitting. This is a conservative stale guard, not an exchange calendar.
