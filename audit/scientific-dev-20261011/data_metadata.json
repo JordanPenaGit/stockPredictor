@@ -1,0 +1,64 @@
+{
+  "first": "2015-01-02 00:00:00",
+  "hash": "2697ed1baf493a5be31163bb548cc1c9e67546b2d08ae88f826b42b4dd129f9e",
+  "last": "2023-12-29 00:00:00",
+  "provenance": {
+    "AAPL": {
+      "fetched_at": "2026-10-04T22:45:51.458622+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"AAPL\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "3f2f524de98bc36c3a2a6f826c5b269fda42d83c6c6bcb9f8a5b855eb26bc145"
+    },
+    "AMZN": {
+      "fetched_at": "2026-10-04T22:45:51.892349+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"AMZN\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "7b4b275303b94a1949994b9ee10301e4ce288064ceda27ae3c71fa9ce848c4fa"
+    },
+    "GOOGL": {
+      "fetched_at": "2026-10-04T22:45:52.119478+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"GOOGL\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "eac5b2c3236c75edfe423731a0d88bfbd4a6ceb8696c54e6902cb66adfbde135"
+    },
+    "JNJ": {
+      "fetched_at": "2026-10-04T22:45:52.887426+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"JNJ\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "f31f9d8c429c98829e0706c43757f03dc995068389ccd28fa3b5942a1d051d88"
+    },
+    "JPM": {
+      "fetched_at": "2026-10-04T22:45:52.393376+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"JPM\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "9daf2085eb37f9efdeed3dfa59ec7567debcfe58d3b251be0d751db2299870b1"
+    },
+    "MSFT": {
+      "fetched_at": "2026-10-04T22:45:51.672145+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"MSFT\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "3ee09e83ee4052c52c8b8150de740480454f0850339b45e48c83e72280a08195"
+    },
+    "SPY": {
+      "fetched_at": "2026-10-04T22:45:53.377292+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"SPY\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "75875c403929a482527caf9ba7a54e8d1fa4691a28ae96d0bf722cdeb6c94cfc"
+    },
+    "WMT": {
+      "fetched_at": "2026-10-04T22:45:53.150695+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"WMT\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "3023c48d9af363735c4e434b56071cf39ed7b1b609a9332b212d9e401adff128"
+    },
+    "XOM": {
+      "fetched_at": "2026-10-04T22:45:52.635800+00:00",
+      "request": "[\"yahoo-adjusted-v1\", \"XOM\", \"2015-01-01\", \"2026-10-04\"]",
+      "source_payload_sha256": "ca017fad2d0e60953867084bc071e49792aaf095f3b784b34c5e90668f1f8b95"
+    }
+  },
+  "retrospective_not_point_in_time": true,
+  "rows": {
+    "AAPL": 2264,
+    "AMZN": 2264,
+    "GOOGL": 2264,
+    "JNJ": 2264,
+    "JPM": 2264,
+    "MSFT": 2264,
+    "SPY": 2264,
+    "WMT": 2264,
+    "XOM": 2264
+  }
+}

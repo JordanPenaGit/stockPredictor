@@ -29,3 +29,13 @@ unchanged. Frozen refits clone entire pipelines; new assessment requires matchin
 source/dependency versions. Current refits use unique separate result directories.
 Uniformly stale current market dates (>7 calendar days) fail; missing candidates
 fail before fitting. This is a conservative stale guard, not an exchange calendar.
+
+## Phase D disposition
+All declared development experiments completed, every base ML acceptance gate
+failed. This is a research finding, not grounds for retuning. RF 20-day paired
+net-return interval versus equal-weight spans approximately -19.68 to +6.44
+percentage points/year (arithmetic, not CAGR; unadjusted, not significance).
+A fresh isolated clone installed the dependency lock and completed deterministic
+integration plus fresh real-data bounded smoke without any old ignored artifacts.
+All 38 original files and 68 newly frozen research artifacts verified by SHA-256.
+Scientific limits (PTI/delistings/true executable quotes/selection) remain unresolved.

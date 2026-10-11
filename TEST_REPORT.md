@@ -33,3 +33,26 @@ seeded block-bootstrap tests. Initial fixture equality exposed unnormalized NaN
 values for empty regime slices; fixed JSON-clean return consistency BEFORE market
 experiments. No model/period adjustment. arch 7.2.0 reused rather than implementing
 heavy custom resampling; dependencies installed and lock recaptured.
+
+## Phase D — actual market execution / critical gate
+- Full plan frozen in c25ce83 BEFORE any new performance; plan SHA-256 verified.
+- Executed: .venv/bin/python research.py --cache data/prices.sqlite --output results/scientific-dev-20261011
+- Completed all 3 families + 5 declared variants + baselines, all costs/year/regime/
+  single-stock allocation/trade concentration/window/block diagnostics. No failed
+  experiment, no parameter/period changes, no selection. 1,000 common signal dates,
+  999 elapsed opens (2020-01-03 through 2023-12-21). Data ends 2023-12-29; target
+  maturity trims the last six signals. All 3 model acceptance gates FAIL.
+- Observed CAGR: linear -3.03%, RF 7.68%, HGB 8.26%; SPY 11.87%, equal-weight
+  buyhold 16.24%, historical mean 23.54%, momentum 19.62%, trend 20.65%. These
+  simple-baseline historical successes are not newly independent evidence.
+- Verified all 68 new artifact hashes; all 38 original files byte-identical.
+- Actual second clone /tmp/stock-scientific-final at c25ce83: installed locked
+  dependencies into NEW .venv, 56 tests pass (1.8 s), compileall and pip check pass.
+  All five CLI helps exit 0; missing run exits 1; invalid top/ticker exit 2.
+- Clean clone had NO old data/models/results. Executed research.py --smoke --output
+  results/clean-download-smoke with fresh real Yahoo 2015–2023 downloads and no
+  cache/snapshot arguments. Completed bounded first-quarter-2020 linear/baseline
+  smoke with negative gates. This proves workflow operation, not bitwise vendor
+  reproducibility or independent performance. Ignored artifacts are not in git.
+- Reports retain poor predictive metrics and wide unadjusted intervals. No legacy
+  holdout retraining/reassessment. Legacy saved metrics read descriptively only.

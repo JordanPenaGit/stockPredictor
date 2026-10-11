@@ -1,0 +1,118 @@
+{
+  "created_at": "2026-10-11T18:37:28.200983+00:00",
+  "dependency_lock_sha256": "85ca3309d919f94f1aae12748707b0315e2b263ad7c17aeeee3e94c0df3e70ae",
+  "git_commit": "c25ce836a94578329de33a8ac2e193a82650e201",
+  "mode": "full development",
+  "plan": {
+    "baselines": [
+      "SPY_buyhold",
+      "equal_weight_buyhold",
+      "momentum60",
+      "trend200",
+      "historical_mean",
+      "naive_zero_cash"
+    ],
+    "benchmark": "SPY",
+    "bootstrap": {
+      "blocks": [
+        5,
+        20,
+        60
+      ],
+      "interval": "95% percentile, descriptive, unadjusted for multiple comparisons",
+      "library": "arch CircularBlockBootstrap",
+      "replications": 1000,
+      "seed": 42,
+      "statistics": [
+        "annualized arithmetic paired net return difference vs SPY and equal_weight_buyhold",
+        "mean date-aggregated squared forecast error difference vs historical_mean"
+      ]
+    },
+    "commission_bps": 5,
+    "cost_bps_per_side": [
+      0,
+      10,
+      25,
+      50
+    ],
+    "data_end_exclusive": "2024-01-01",
+    "data_start": "2015-01-01",
+    "diagnostics": [
+      "every calendar year",
+      "prior-close SPY SMA200 regime",
+      "per-stock realized PnL and metrics",
+      "remove each stock from allocation without refitting: conditional sensitivity only",
+      "largest five closed-lot PnL share; descriptive not independent trades",
+      "fixed hyperparameter neighborhoods",
+      "fixed 756-date RF training window",
+      "cost sensitivity on same forecasts"
+    ],
+    "feature_set": "all",
+    "gate": {
+      "decision": "No selection or deployment from these diagnostics. Exploratory promise requires all base models judged separately, not best-of-many.",
+      "economic": "positive costed excess vs SPY and equal-weight at 10 and 25 bps, positive excess in every year; drawdown no worse than equal-weight",
+      "failure": "Report every failed gate, variant and exception. No parameter hunting or changes because of disappointing outcomes.",
+      "predictive": "lower RMSE and Brier than historical mean; AUC > .5",
+      "uncertainty": "paired excess interval lower bound >0 for all blocks versus both controls, still NOT selection-adjusted proof"
+    },
+    "horizon": 5,
+    "label": "EXPLORATORY DEVELOPMENT ONLY; holdout already seen",
+    "limitations": [
+      "retrospective adjusted total-return proxy, not executable/PTI",
+      "current survivors, no delistings",
+      "2020-2023 previously used development, not new independent test",
+      "bootstrap approximate stationarity; cross-section aggregated by date; limited regimes; no significance claims"
+    ],
+    "max_positions": 3,
+    "max_weight": 0.34,
+    "models": [
+      "linear",
+      "random_forest",
+      "gradient_boosting"
+    ],
+    "name": "scientific-dev-20261011",
+    "probability_threshold": 0.55,
+    "rebalance_days": 5,
+    "return_threshold": 0,
+    "seed": 42,
+    "select_features": 24,
+    "sizing": "equal",
+    "slippage_bps": 5,
+    "source_cache_request_end": "2026-10-04",
+    "starting_capital": 100000,
+    "strategy": "ranking",
+    "train_min_dates": 756,
+    "training_window": 0,
+    "universe": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "JPM",
+      "XOM",
+      "JNJ",
+      "WMT"
+    ],
+    "validation_start": "2020-01-01",
+    "variants": [
+      "linear_alpha5",
+      "linear_alpha20",
+      "rf_leaf20",
+      "rf_leaf80",
+      "rf_window756"
+    ],
+    "walk_forward_dates": 126
+  },
+  "plan_hash": "f4da709fea83c3f5fe46a07b5f59353535e116c95c8303a02b03f8d25f4e0603",
+  "source_hash": "2bdbdf04f48cb75a808d841b64ce25b707aab7db45b86a6e68d3788e0e9ba6d7",
+  "versions": {
+    "joblib": "1.6.0",
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "yfinance": "0.2.66"
+  }
+}

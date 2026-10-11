@@ -1,0 +1,4432 @@
+{
+  "annual": {
+    "SPY_buyhold": {
+      "2020": {
+        "dates": 251,
+        "return": 0.17805645335930143
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.29641225968496965
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.1867478138355282
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.2558193392363217
+      }
+    },
+    "equal_weight_buyhold": {
+      "2020": {
+        "dates": 251,
+        "return": 0.27440752383863676
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.3032347299172371
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.17649703390476146
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.3278970968623913
+      }
+    },
+    "gradient_boosting": {
+      "2020": {
+        "dates": 251,
+        "return": -0.04214139775903192
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.11431381809892738
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.05267168393033417
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.3548167671162896
+      }
+    },
+    "historical_mean": {
+      "2020": {
+        "dates": 251,
+        "return": 0.6714092384857226
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.29287284930299284
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.35803868828039176
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.6662565731133612
+      }
+    },
+    "linear": {
+      "2020": {
+        "dates": 251,
+        "return": 0.0842922427877193
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.20928348696108512
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.4330975360051128
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.1906201665688687
+      }
+    },
+    "linear_alpha20": {
+      "2020": {
+        "dates": 251,
+        "return": 0.05319013313098164
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.22819459590668156
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.42306129396972236
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.14949282261116226
+      }
+    },
+    "linear_alpha5": {
+      "2020": {
+        "dates": 251,
+        "return": -0.019991102538160055
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.211980719465795
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.39285493320706555
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.2157156671776097
+      }
+    },
+    "momentum60": {
+      "2020": {
+        "dates": 251,
+        "return": 0.2725165847345292
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.592887432111971
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.04249289896437347
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.04823471545743274
+      }
+    },
+    "naive_zero_cash": {
+      "2020": {
+        "dates": 251,
+        "return": 0.0
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.0
+      },
+      "2022": {
+        "dates": 251,
+        "return": 0.0
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.0
+      }
+    },
+    "random_forest": {
+      "2020": {
+        "dates": 251,
+        "return": -0.038350146191533985
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.06306091702556715
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.1206008399433699
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.4914723027630796
+      }
+    },
+    "rf_leaf20": {
+      "2020": {
+        "dates": 251,
+        "return": -0.006598430247203524
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.16172526809462728
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.1702534465022666
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.3464660082193325
+      }
+    },
+    "rf_leaf80": {
+      "2020": {
+        "dates": 251,
+        "return": -0.05980636770157011
+      },
+      "2021": {
+        "dates": 252,
+        "return": -0.0162077982742862
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.13492575597350454
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.38230604034492344
+      }
+    },
+    "rf_window756": {
+      "2020": {
+        "dates": 251,
+        "return": -0.05656239356600823
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.13676933616582398
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.24841678340396556
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.22617563436976296
+      }
+    },
+    "trend200": {
+      "2020": {
+        "dates": 251,
+        "return": 0.3734068774140593
+      },
+      "2021": {
+        "dates": 252,
+        "return": 0.437184922367716
+      },
+      "2022": {
+        "dates": 251,
+        "return": -0.022004713230248996
+      },
+      "2023": {
+        "dates": 245,
+        "return": 0.09017999922842623
+      }
+    }
+  },
+  "config": {
+    "benchmark": "SPY",
+    "commission_bps": 5,
+    "end": "2024-01-02",
+    "feature_set": "all",
+    "horizon": 5,
+    "max_positions": 3,
+    "max_weight": 0.34,
+    "models": [
+      "linear",
+      "random_forest",
+      "gradient_boosting"
+    ],
+    "probability_threshold": 0.55,
+    "rebalance_days": 5,
+    "return_threshold": 0,
+    "seed": 42,
+    "select_features": 24,
+    "sizing": "equal",
+    "slippage_bps": 5,
+    "start": "2015-01-01",
+    "starting_capital": 100000,
+    "strategy": "ranking",
+    "target_threshold": 0.0,
+    "test_start": "2024-01-01",
+    "train_min_dates": 756,
+    "training_window": 0,
+    "universe": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "JPM",
+      "XOM",
+      "JNJ",
+      "WMT"
+    ],
+    "validation_start": "2020-01-01",
+    "walk_forward_dates": 126
+  },
+  "cost_sensitivity": {
+    "SPY_buyhold": {
+      "0": {
+        "average_trade_return": 0.5628965318590606,
+        "cagr": 0.11922998485887248,
+        "calmar": 0.37202451101415585,
+        "closed_lots": 1,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.3204895949835297,
+        "number_of_trades": 2,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": 0.6385951797984102,
+        "sortino": 0.8699680595889823,
+        "start": "2020-01-03",
+        "total_return": 0.5628965318590606,
+        "turnover": 2.0,
+        "volatility": 0.2117228780467883,
+        "win_rate": 1.0
+      },
+      "10": {
+        "average_trade_return": 0.5597738614657359,
+        "cagr": 0.11866547051375198,
+        "calmar": 0.37026309861900597,
+        "closed_lots": 1,
+        "costs": 256.0336195663398,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.3204895949835298,
+        "number_of_trades": 2,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": 0.6361880098983507,
+        "sortino": 0.8666581337521352,
+        "start": "2020-01-03",
+        "total_return": 0.5597738614657362,
+        "turnover": 1.9990009990009991,
+        "volatility": 0.2117343933203007,
+        "win_rate": 1.0
+      },
+      "25": {
+        "average_trade_return": 0.555101536687694,
+        "cagr": 0.11781923034947428,
+        "calmar": 0.36762263796903955,
+        "closed_lots": 1,
+        "costs": 639.1263171718357,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.3204895949835298,
+        "number_of_trades": 2,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": 0.6325690429259349,
+        "sortino": 0.8616671360003414,
+        "start": "2020-01-03",
+        "total_return": 0.5551015366876941,
+        "turnover": 1.9975062344139651,
+        "volatility": 0.2117560666282377,
+        "win_rate": 1.0
+      },
+      "50": {
+        "average_trade_return": 0.5473453225868312,
+        "cagr": 0.11641023645076909,
+        "calmar": 0.363226258427365,
+        "closed_lots": 1,
+        "costs": 1275.0729014224182,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.3204895949835297,
+        "number_of_trades": 2,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": 0.6265163352196286,
+        "sortino": 0.8532813507857983,
+        "start": "2020-01-03",
+        "total_return": 0.5473453225868312,
+        "turnover": 1.9950248756218905,
+        "volatility": 0.21180386061863926,
+        "win_rate": 1.0
+      }
+    },
+    "equal_weight_buyhold": {
+      "0": {
+        "average_trade_return": 0.8198230024487153,
+        "cagr": 0.16303541332610072,
+        "calmar": 0.6221801874873372,
+        "closed_lots": 8,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.26203890224231685,
+        "number_of_trades": 16,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": 0.8011230627668083,
+        "sortino": 1.110487387061229,
+        "start": "2020-01-03",
+        "total_return": 0.8198230024487156,
+        "turnover": 2.0,
+        "volatility": 0.21850452590026215,
+        "win_rate": 1.0
+      },
+      "10": {
+        "average_trade_return": 0.8161869924538128,
+        "cagr": 0.16244880451148003,
+        "calmar": 0.6199415549423182,
+        "closed_lots": 8,
+        "costs": 281.70059964522636,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.26203890224231685,
+        "number_of_trades": 16,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": 0.7987690372315678,
+        "sortino": 1.1071632969978336,
+        "start": "2020-01-03",
+        "total_return": 0.8161869924538132,
+        "turnover": 1.9990009990009994,
+        "volatility": 0.21852095052303305,
+        "win_rate": 1.0
+      },
+      "25": {
+        "average_trade_return": 0.8107465784963528,
+        "cagr": 0.16156944343953916,
+        "calmar": 0.6165857132546296,
+        "closed_lots": 8,
+        "costs": 703.1977562216248,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.26203890224231696,
+        "number_of_trades": 16,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": 0.7952275644042451,
+        "sortino": 1.102143707083214,
+        "start": "2020-01-03",
+        "total_return": 0.8107465784963526,
+        "turnover": 1.9975062344139651,
+        "volatility": 0.21854981629047818,
+        "win_rate": 1.0
+      },
+      "50": {
+        "average_trade_return": 0.8017153108820614,
+        "cagr": 0.16010530307203386,
+        "calmar": 0.6109982208824045,
+        "closed_lots": 8,
+        "costs": 1402.8970161436396,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.26203890224231674,
+        "number_of_trades": 16,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": 0.7892980703355251,
+        "sortino": 1.0936907942161342,
+        "start": "2020-01-03",
+        "total_return": 0.8017153108820614,
+        "turnover": 1.9950248756218905,
+        "volatility": 0.21860914167636267,
+        "win_rate": 1.0
+      }
+    },
+    "gradient_boosting": {
+      "0": {
+        "average_trade_return": 0.014905809259181047,
+        "cagr": 0.12389039976690852,
+        "calmar": 0.3728941559333,
+        "closed_lots": 335,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.8205840337156682,
+        "max_drawdown": -0.332240121749371,
+        "number_of_trades": 711,
+        "periods": 999,
+        "profit_factor": 1.338604376450289,
+        "sharpe": 0.5884799635391754,
+        "sortino": 0.8530317707902083,
+        "start": "2020-01-03",
+        "total_return": 0.5888550400720298,
+        "turnover": 148.28097067683845,
+        "volatility": 0.2528917885967081,
+        "win_rate": 0.5970149253731343
+      },
+      "10": {
+        "average_trade_return": 0.01295791501745829,
+        "cagr": 0.08263075627445104,
+        "calmar": 0.2466640108461904,
+        "closed_lots": 342,
+        "costs": 15594.74481338888,
+        "end": "2023-12-21",
+        "exposure": 0.8205840337156682,
+        "max_drawdown": -0.3349931592816603,
+        "number_of_trades": 711,
+        "periods": 999,
+        "profit_factor": 1.2179829725941962,
+        "sharpe": 0.44074116573030636,
+        "sortino": 0.6341211201140019,
+        "start": "2020-01-03",
+        "total_return": 0.3699035826364865,
+        "turnover": 148.19189560626546,
+        "volatility": 0.25264007884507794,
+        "win_rate": 0.5789473684210527
+      },
+      "25": {
+        "average_trade_return": 0.009844728989830805,
+        "cagr": 0.023569592050384447,
+        "calmar": 0.06950634062433853,
+        "closed_lots": 344,
+        "costs": 34734.35086548033,
+        "end": "2023-12-21",
+        "exposure": 0.8205840337156682,
+        "max_drawdown": -0.33909988410656244,
+        "number_of_trades": 711,
+        "periods": 999,
+        "profit_factor": 1.0591122845635976,
+        "sharpe": 0.21867848211779803,
+        "sortino": 0.311122219953441,
+        "start": "2020-01-03",
+        "total_return": 0.0967513234495796,
+        "turnover": 148.06112384364047,
+        "volatility": 0.2525266389428238,
+        "win_rate": 0.563953488372093
+      },
+      "50": {
+        "average_trade_return": 0.00503856958074074,
+        "cagr": -0.0677850237797234,
+        "calmar": -0.16527752561485048,
+        "closed_lots": 350,
+        "costs": 57840.23499675335,
+        "end": "2023-12-21",
+        "exposure": 0.8205840337156682,
+        "max_drawdown": -0.41012850069938844,
+        "number_of_trades": 711,
+        "periods": 999,
+        "profit_factor": 0.8426999219383119,
+        "sharpe": -0.15060631326458543,
+        "sortino": -0.2102805718531845,
+        "start": "2020-01-03",
+        "total_return": -0.24290040423274506,
+        "turnover": 147.84860510277264,
+        "volatility": 0.25303768877304544,
+        "win_rate": 0.5314285714285715
+      }
+    },
+    "historical_mean": {
+      "0": {
+        "average_trade_return": 0.38337676878870147,
+        "cagr": 0.2369525153295866,
+        "calmar": 0.6176926174951741,
+        "closed_lots": 298,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.3836091101273974,
+        "number_of_trades": 603,
+        "periods": 999,
+        "profit_factor": 39.3441866242452,
+        "sharpe": 0.8499278456991932,
+        "sortino": 1.2221323093595384,
+        "start": "2020-01-03",
+        "total_return": 1.323345458111707,
+        "turnover": 5.122010700993255,
+        "volatility": 0.3051336684931191,
+        "win_rate": 0.912751677852349
+      },
+      "10": {
+        "average_trade_return": 0.38080329068183333,
+        "cagr": 0.23535536838187698,
+        "calmar": 0.6126147765780601,
+        "closed_lots": 298,
+        "costs": 857.110080701431,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.38418167073364373,
+        "number_of_trades": 603,
+        "periods": 999,
+        "profit_factor": 38.480206614360455,
+        "sharpe": 0.8456714505335095,
+        "sortino": 1.2158008710918284,
+        "start": "2020-01-03",
+        "total_return": 1.31147576835474,
+        "turnover": 5.12093540670509,
+        "volatility": 0.3051445631246944,
+        "win_rate": 0.9060402684563759
+      },
+      "25": {
+        "average_trade_return": 0.3769522553493088,
+        "cagr": 0.2329635542620072,
+        "calmar": 0.605037704600554,
+        "closed_lots": 298,
+        "costs": 2133.5509785467107,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.3850397297401652,
+        "number_of_trades": 603,
+        "periods": 999,
+        "profit_factor": 37.21445194228621,
+        "sharpe": 0.8392821550469088,
+        "sortino": 1.206288263897894,
+        "start": "2020-01-03",
+        "total_return": 1.2937851367160271,
+        "turnover": 5.119327502911743,
+        "volatility": 0.30516402412655724,
+        "win_rate": 0.9026845637583892
+      },
+      "50": {
+        "average_trade_return": 0.36899558999425286,
+        "cagr": 0.22898750996845618,
+        "calmar": 0.5925138936031379,
+        "closed_lots": 299,
+        "costs": 4236.602404107305,
+        "end": "2023-12-21",
+        "exposure": 1.0,
+        "max_drawdown": -0.3864677477450522,
+        "number_of_trades": 603,
+        "periods": 999,
+        "profit_factor": 35.22652935802804,
+        "sharpe": 0.8286212710535193,
+        "sortino": 1.190394581717629,
+        "start": "2020-01-03",
+        "total_return": 1.2646013038945232,
+        "turnover": 5.116703397220437,
+        "volatility": 0.3052047257074763,
+        "win_rate": 0.8996655518394648
+      }
+    },
+    "linear": {
+      "0": {
+        "average_trade_return": -8.135298947944729e-05,
+        "cagr": 0.006834570484214542,
+        "calmar": 0.015015967951053508,
+        "closed_lots": 375,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.9260357417263535,
+        "max_drawdown": -0.4551535076854658,
+        "number_of_trades": 775,
+        "periods": 999,
+        "profit_factor": 1.0151222936480349,
+        "sharpe": 0.15479303068496394,
+        "sortino": 0.2131632036147934,
+        "start": "2020-01-03",
+        "total_return": 0.027369879359278926,
+        "turnover": 149.1449411606317,
+        "volatility": 0.2549940067512414,
+        "win_rate": 0.5386666666666666
+      },
+      "10": {
+        "average_trade_return": -0.0017834079823344116,
+        "cagr": -0.030339856986962288,
+        "calmar": -0.06314465513436565,
+        "closed_lots": 381,
+        "costs": 15021.193936970441,
+        "end": "2023-12-21",
+        "exposure": 0.9260357417263536,
+        "max_drawdown": -0.4804817909354646,
+        "number_of_trades": 775,
+        "periods": 999,
+        "profit_factor": 0.9345661048852868,
+        "sharpe": 0.007401516109595846,
+        "sortino": 0.010125595624440688,
+        "start": "2020-01-03",
+        "total_return": -0.11497395360075113,
+        "turnover": 149.0669502440417,
+        "volatility": 0.2551128319007911,
+        "win_rate": 0.5223097112860893
+      },
+      "25": {
+        "average_trade_return": -0.004719253577720428,
+        "cagr": -0.0835425353322854,
+        "calmar": -0.16181308149743354,
+        "closed_lots": 387,
+        "costs": 33761.32581961911,
+        "end": "2023-12-21",
+        "exposure": 0.9260357417263536,
+        "max_drawdown": -0.5162903676215476,
+        "number_of_trades": 775,
+        "periods": 999,
+        "profit_factor": 0.8264839314099658,
+        "sharpe": -0.2129622252152793,
+        "sortino": -0.288487254002838,
+        "start": "2020-01-03",
+        "total_return": -0.29237627806331556,
+        "turnover": 148.95484819521863,
+        "volatility": 0.2555189384271981,
+        "win_rate": 0.49612403100775193
+      },
+      "50": {
+        "average_trade_return": -0.010221901361011433,
+        "cagr": -0.16581677076048718,
+        "calmar": -0.28874148287049306,
+        "closed_lots": 398,
+        "costs": 57028.14260756754,
+        "end": "2023-12-21",
+        "exposure": 0.9260357417263536,
+        "max_drawdown": -0.5742741538626082,
+        "number_of_trades": 775,
+        "periods": 999,
+        "profit_factor": 0.6749842166358114,
+        "sharpe": -0.5766619372379121,
+        "sortino": -0.7683881548683906,
+        "start": "2020-01-03",
+        "total_return": -0.5126309924344545,
+        "turnover": 148.78129487342332,
+        "volatility": 0.25679649051664544,
+        "win_rate": 0.457286432160804
+      }
+    },
+    "linear_alpha20": {
+      "0": {
+        "average_trade_return": -0.0010456117077551398,
+        "cagr": -0.0020440935161745166,
+        "calmar": -0.004569548507004955,
+        "closed_lots": 370,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.9193597372919893,
+        "max_drawdown": -0.44732942719417335,
+        "number_of_trades": 765,
+        "periods": 999,
+        "profit_factor": 0.995344009320773,
+        "sharpe": 0.11976499029282124,
+        "sortino": 0.16497140189770715,
+        "start": "2020-01-03",
+        "total_return": -0.008078853281837328,
+        "turnover": 145.2220289364455,
+        "volatility": 0.2544252680884478,
+        "win_rate": 0.5324324324324324
+      },
+      "10": {
+        "average_trade_return": -0.002741612719272243,
+        "cagr": -0.03793924654914371,
+        "calmar": -0.0805018046205638,
+        "closed_lots": 376,
+        "costs": 14320.707895584224,
+        "end": "2023-12-21",
+        "exposure": 0.9193597372919893,
+        "max_drawdown": -0.4712844231004023,
+        "number_of_trades": 765,
+        "periods": 999,
+        "profit_factor": 0.9157828713417124,
+        "sharpe": -0.024166149034613973,
+        "sortino": -0.03307080279896628,
+        "start": "2020-01-03",
+        "total_return": -0.1421528674271889,
+        "turnover": 145.1483334557215,
+        "volatility": 0.2544358216007758,
+        "win_rate": 0.5186170212765957
+      },
+      "25": {
+        "average_trade_return": -0.005728865588895487,
+        "cagr": -0.08937476147043233,
+        "calmar": -0.17687720471761267,
+        "closed_lots": 381,
+        "costs": 32269.95643517211,
+        "end": "2023-12-21",
+        "exposure": 0.9193597372919893,
+        "max_drawdown": -0.5052927063898403,
+        "number_of_trades": 765,
+        "periods": 999,
+        "profit_factor": 0.8088852941510549,
+        "sharpe": -0.23957356185515866,
+        "sortino": -0.3246800764108322,
+        "start": "2020-01-03",
+        "total_return": -0.3100606969084413,
+        "turnover": 145.04267635225062,
+        "volatility": 0.2546696156919476,
+        "win_rate": 0.49343832020997375
+      },
+      "50": {
+        "average_trade_return": -0.012339566319574075,
+        "cagr": -0.16907276481583922,
+        "calmar": -0.2939604029148465,
+        "closed_lots": 394,
+        "costs": 54718.52193914567,
+        "end": "2023-12-21",
+        "exposure": 0.9193597372919893,
+        "max_drawdown": -0.5751548954871166,
+        "number_of_trades": 765,
+        "periods": 999,
+        "profit_factor": 0.6585757059864855,
+        "sharpe": -0.5957275991838722,
+        "sortino": -0.7944285563517728,
+        "start": "2020-01-03",
+        "total_return": -0.5201287555752179,
+        "turnover": 144.87878083724263,
+        "volatility": 0.2556351376356863,
+        "win_rate": 0.4593908629441624
+      }
+    },
+    "linear_alpha5": {
+      "0": {
+        "average_trade_return": 0.00017614845136581717,
+        "cagr": 0.005101751551153777,
+        "calmar": 0.012106257114749663,
+        "closed_lots": 377,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.9293198545504355,
+        "max_drawdown": -0.4214144390620992,
+        "number_of_trades": 781,
+        "periods": 999,
+        "profit_factor": 1.0114853083265338,
+        "sharpe": 0.14870413592363443,
+        "sortino": 0.20260070118616755,
+        "start": "2020-01-03",
+        "total_return": 0.02037824260292731,
+        "turnover": 151.77131244843793,
+        "volatility": 0.25608041865767284,
+        "win_rate": 0.5411140583554377
+      },
+      "10": {
+        "average_trade_return": -0.0014790317130324716,
+        "cagr": -0.03264955065539765,
+        "calmar": -0.07265059009784315,
+        "closed_lots": 385,
+        "costs": 14183.042354151396,
+        "end": "2023-12-21",
+        "exposure": 0.9293198545504355,
+        "max_drawdown": -0.4494051680987923,
+        "number_of_trades": 781,
+        "periods": 999,
+        "profit_factor": 0.9284594215164373,
+        "sharpe": -0.0006056399139133253,
+        "sortino": -0.0008199017836946456,
+        "start": "2020-01-03",
+        "total_return": -0.12330160021554881,
+        "turnover": 151.68841301712013,
+        "volatility": 0.25623862909338074,
+        "win_rate": 0.522077922077922
+      },
+      "25": {
+        "average_trade_return": -0.004669414417890098,
+        "cagr": -0.08663239311754889,
+        "calmar": -0.1772061823093911,
+        "closed_lots": 390,
+        "costs": 31792.25432371231,
+        "end": "2023-12-21",
+        "exposure": 0.9293198545504355,
+        "max_drawdown": -0.48887906724548724,
+        "number_of_trades": 781,
+        "periods": 999,
+        "profit_factor": 0.8176080517242552,
+        "sharpe": -0.22372277648555183,
+        "sortino": -0.3000017077413833,
+        "start": "2020-01-03",
+        "total_return": -0.3017869942384084,
+        "turnover": 151.56885960682592,
+        "volatility": 0.25671546520422184,
+        "win_rate": 0.49230769230769234
+      },
+      "50": {
+        "average_trade_return": -0.009802659164900156,
+        "cagr": -0.17000084143426852,
+        "calmar": -0.3099326754809142,
+        "closed_lots": 400,
+        "costs": 53493.52922630189,
+        "end": "2023-12-21",
+        "exposure": 0.9293198545504355,
+        "max_drawdown": -0.5485089339821392,
+        "number_of_trades": 781,
+        "periods": 999,
+        "profit_factor": 0.6636165437297097,
+        "sharpe": -0.5915847671302787,
+        "sortino": -0.7807668383484732,
+        "start": "2020-01-03",
+        "total_return": -0.5222500038278849,
+        "turnover": 151.38273891052353,
+        "volatility": 0.2581409284074018,
+        "win_rate": 0.45
+      }
+    },
+    "momentum60": {
+      "0": {
+        "average_trade_return": 0.08828313893115886,
+        "cagr": 0.2180950128664214,
+        "calmar": 1.0302592354113633,
+        "closed_lots": 354,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.9492406648710977,
+        "max_drawdown": -0.21168945190706312,
+        "number_of_trades": 673,
+        "periods": 999,
+        "profit_factor": 1.9199702471300648,
+        "sharpe": 0.9682749797287568,
+        "sortino": 1.4046428282991634,
+        "start": "2020-01-03",
+        "total_return": 1.1860727909623106,
+        "turnover": 71.86563903241117,
+        "volatility": 0.2315041650550898,
+        "win_rate": 0.7655367231638418
+      },
+      "10": {
+        "average_trade_return": 0.086421027961451,
+        "cagr": 0.1962087500361105,
+        "calmar": 0.9101144255996879,
+        "closed_lots": 356,
+        "costs": 12240.649303339493,
+        "end": "2023-12-21",
+        "exposure": 0.9492406648710979,
+        "max_drawdown": -0.21558690261043345,
+        "number_of_trades": 673,
+        "periods": 999,
+        "profit_factor": 1.7972258712138571,
+        "sharpe": 0.8897749899686627,
+        "sortino": 1.286069947850473,
+        "start": "2020-01-03",
+        "total_return": 1.0344596413276075,
+        "turnover": 71.8507243996316,
+        "volatility": 0.2315505892920301,
+        "win_rate": 0.7556179775280899
+      },
+      "25": {
+        "average_trade_return": 0.08259940464394132,
+        "cagr": 0.16410151395094164,
+        "calmar": 0.741200485931991,
+        "closed_lots": 361,
+        "costs": 28832.689291246556,
+        "end": "2023-12-21",
+        "exposure": 0.9492406648710979,
+        "max_drawdown": -0.22139963082269054,
+        "number_of_trades": 673,
+        "periods": 999,
+        "profit_factor": 1.631721992794798,
+        "sharpe": 0.7718276658792333,
+        "sortino": 1.1094918884891665,
+        "start": "2020-01-03",
+        "total_return": 0.8264450050579883,
+        "turnover": 71.82980226823793,
+        "volatility": 0.23171416475727208,
+        "win_rate": 0.7368421052631579
+      },
+      "50": {
+        "average_trade_return": 0.0788637672900615,
+        "cagr": 0.11244694111857356,
+        "calmar": 0.4437644936914885,
+        "closed_lots": 371,
+        "costs": 52320.07123715816,
+        "end": "2023-12-21",
+        "exposure": 0.9492406648710978,
+        "max_drawdown": -0.2533932811595069,
+        "number_of_trades": 673,
+        "periods": 999,
+        "profit_factor": 1.3970197241696374,
+        "sharpe": 0.5751000131083295,
+        "sortino": 0.819139611327322,
+        "start": "2020-01-03",
+        "total_return": 0.5256832995930709,
+        "turnover": 71.80422136039446,
+        "volatility": 0.23223655868729268,
+        "win_rate": 0.7115902964959568
+      }
+    },
+    "naive_zero_cash": {
+      "0": {
+        "average_trade_return": null,
+        "cagr": 0.0,
+        "calmar": null,
+        "closed_lots": 0,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.0,
+        "max_drawdown": 0.0,
+        "number_of_trades": 0,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": null,
+        "sortino": null,
+        "start": "2020-01-03",
+        "total_return": 0.0,
+        "turnover": 0.0,
+        "volatility": 0.0,
+        "win_rate": null
+      },
+      "10": {
+        "average_trade_return": null,
+        "cagr": 0.0,
+        "calmar": null,
+        "closed_lots": 0,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.0,
+        "max_drawdown": 0.0,
+        "number_of_trades": 0,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": null,
+        "sortino": null,
+        "start": "2020-01-03",
+        "total_return": 0.0,
+        "turnover": 0.0,
+        "volatility": 0.0,
+        "win_rate": null
+      },
+      "25": {
+        "average_trade_return": null,
+        "cagr": 0.0,
+        "calmar": null,
+        "closed_lots": 0,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.0,
+        "max_drawdown": 0.0,
+        "number_of_trades": 0,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": null,
+        "sortino": null,
+        "start": "2020-01-03",
+        "total_return": 0.0,
+        "turnover": 0.0,
+        "volatility": 0.0,
+        "win_rate": null
+      },
+      "50": {
+        "average_trade_return": null,
+        "cagr": 0.0,
+        "calmar": null,
+        "closed_lots": 0,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.0,
+        "max_drawdown": 0.0,
+        "number_of_trades": 0,
+        "periods": 999,
+        "profit_factor": null,
+        "sharpe": null,
+        "sortino": null,
+        "start": "2020-01-03",
+        "total_return": 0.0,
+        "turnover": 0.0,
+        "volatility": 0.0,
+        "win_rate": null
+      }
+    },
+    "random_forest": {
+      "0": {
+        "average_trade_return": 0.009953663636529334,
+        "cagr": 0.11036278244916864,
+        "calmar": 0.38762042979615857,
+        "closed_lots": 325,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.8284226304613574,
+        "max_drawdown": -0.28471869376752434,
+        "number_of_trades": 676,
+        "periods": 999,
+        "profit_factor": 1.430710416832107,
+        "sharpe": 0.5299918852789643,
+        "sortino": 0.7676160083907433,
+        "start": "2020-01-03",
+        "total_return": 0.5143833975727845,
+        "turnover": 121.71748283551969,
+        "volatility": 0.26266671541482706,
+        "win_rate": 0.5907692307692308
+      },
+      "10": {
+        "average_trade_return": 0.007713313083590979,
+        "cagr": 0.07678990147994758,
+        "calmar": 0.2664918735267032,
+        "closed_lots": 328,
+        "costs": 12151.819053310359,
+        "end": "2023-12-21",
+        "exposure": 0.8284226304613574,
+        "max_drawdown": -0.28815100612159195,
+        "number_of_trades": 676,
+        "periods": 999,
+        "profit_factor": 1.289154731696869,
+        "sharpe": 0.41308431147068747,
+        "sortino": 0.5947296695384271,
+        "start": "2020-01-03",
+        "total_return": 0.3408381585715601,
+        "turnover": 121.64958099153803,
+        "volatility": 0.2626710121200951,
+        "win_rate": 0.5823170731707317
+      },
+      "25": {
+        "average_trade_return": 0.00445020161262756,
+        "cagr": 0.02832638572639956,
+        "calmar": 0.09576759603714187,
+        "closed_lots": 330,
+        "costs": 27683.93377005423,
+        "end": "2023-12-21",
+        "exposure": 0.8284226304613574,
+        "max_drawdown": -0.2957825704992495,
+        "number_of_trades": 676,
+        "periods": 999,
+        "profit_factor": 1.1011935696672661,
+        "sharpe": 0.23778425083606655,
+        "sortino": 0.33926696340439655,
+        "start": "2020-01-03",
+        "total_return": 0.11709644208780201,
+        "turnover": 121.55063629318002,
+        "volatility": 0.2628794876277018,
+        "win_rate": 0.5636363636363636
+      },
+      "50": {
+        "average_trade_return": -0.0011337975140720304,
+        "cagr": -0.04764890381357301,
+        "calmar": -0.11833627739054464,
+        "closed_lots": 338,
+        "costs": 47729.36061878643,
+        "end": "2023-12-21",
+        "exposure": 0.8284226304613574,
+        "max_drawdown": -0.40265677494922003,
+        "number_of_trades": 676,
+        "periods": 999,
+        "profit_factor": 0.8440116408404548,
+        "sharpe": -0.053053919668206,
+        "sortino": -0.074539688201681,
+        "start": "2020-01-03",
+        "total_return": -0.17596512766417227,
+        "turnover": 121.39135328042161,
+        "volatility": 0.26376073718875315,
+        "win_rate": 0.5266272189349113
+      }
+    },
+    "rf_leaf20": {
+      "0": {
+        "average_trade_return": 0.006748262430493838,
+        "cagr": 0.09984236715026196,
+        "calmar": 0.3362504986096013,
+        "closed_lots": 321,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.821612134421928,
+        "max_drawdown": -0.2969285326359693,
+        "number_of_trades": 674,
+        "periods": 999,
+        "profit_factor": 1.3698380377583192,
+        "sharpe": 0.49595297215381373,
+        "sortino": 0.7002999864449875,
+        "start": "2020-01-03",
+        "total_return": 0.45829602958742943,
+        "turnover": 123.14291733103951,
+        "volatility": 0.2605699464137933,
+        "win_rate": 0.5981308411214953
+      },
+      "10": {
+        "average_trade_return": 0.004493245724388226,
+        "cagr": 0.06620535957538976,
+        "calmar": 0.22047018629418286,
+        "closed_lots": 322,
+        "costs": 12783.626405559753,
+        "end": "2023-12-21",
+        "exposure": 0.821612134421928,
+        "max_drawdown": -0.3002916661350714,
+        "number_of_trades": 674,
+        "periods": 999,
+        "profit_factor": 1.236488226012413,
+        "sharpe": 0.37671203988397595,
+        "sortino": 0.5284047995620287,
+        "start": "2020-01-03",
+        "total_return": 0.28934496518969866,
+        "turnover": 123.07010011879908,
+        "volatility": 0.2606503870818454,
+        "win_rate": 0.5745341614906833
+      },
+      "25": {
+        "average_trade_return": 0.0009952602825672953,
+        "cagr": 0.017676025438238874,
+        "calmar": 0.05638848248878857,
+        "closed_lots": 324,
+        "costs": 29109.069517209053,
+        "end": "2023-12-21",
+        "exposure": 0.821612134421928,
+        "max_drawdown": -0.3134687201726577,
+        "number_of_trades": 674,
+        "periods": 999,
+        "profit_factor": 1.059723850130919,
+        "sharpe": 0.19809286453777483,
+        "sortino": 0.27510223284348273,
+        "start": "2020-01-03",
+        "total_return": 0.07192994767215355,
+        "turnover": 122.96269762484269,
+        "volatility": 0.26097508122318364,
+        "win_rate": 0.5462962962962963
+      },
+      "50": {
+        "average_trade_return": -0.004145583855871357,
+        "cagr": -0.05833432252487192,
+        "calmar": -0.15365288031412083,
+        "closed_lots": 328,
+        "costs": 50145.701335474005,
+        "end": "2023-12-21",
+        "exposure": 0.821612134421928,
+        "max_drawdown": -0.3796500423917595,
+        "number_of_trades": 674,
+        "periods": 999,
+        "profit_factor": 0.8203111765097901,
+        "sharpe": -0.09774957674991687,
+        "sortino": -0.13351792708471105,
+        "start": "2020-01-03",
+        "total_return": -0.2120126889032844,
+        "turnover": 122.78783133438492,
+        "volatility": 0.2620540700940574,
+        "win_rate": 0.49085365853658536
+      }
+    },
+    "rf_leaf80": {
+      "0": {
+        "average_trade_return": 0.0060987870946656595,
+        "cagr": 0.057919821023781015,
+        "calmar": 0.1895137730449972,
+        "closed_lots": 330,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.8287485224102975,
+        "max_drawdown": -0.30562328053079724,
+        "number_of_trades": 677,
+        "periods": 999,
+        "profit_factor": 1.188256020101145,
+        "sharpe": 0.34641341756268423,
+        "sortino": 0.49570182754711095,
+        "start": "2020-01-03",
+        "total_return": 0.2500797027134163,
+        "turnover": 122.40603348436863,
+        "volatility": 0.26075077943029984,
+        "win_rate": 0.5515151515151515
+      },
+      "10": {
+        "average_trade_return": 0.0038694843765496407,
+        "cagr": 0.025753876517759178,
+        "calmar": 0.08348015078493005,
+        "closed_lots": 331,
+        "costs": 11183.754745621045,
+        "end": "2023-12-21",
+        "exposure": 0.8287485224102975,
+        "max_drawdown": -0.3085029947311535,
+        "number_of_trades": 677,
+        "periods": 999,
+        "profit_factor": 1.0813400082913176,
+        "sharpe": 0.22797146657026732,
+        "sortino": 0.32419961636647204,
+        "start": "2020-01-03",
+        "total_return": 0.10605893611234185,
+        "turnover": 122.33945345435527,
+        "volatility": 0.2604769368344269,
+        "win_rate": 0.540785498489426
+      },
+      "25": {
+        "average_trade_return": 0.0010122660279556505,
+        "cagr": -0.020669947112287756,
+        "calmar": -0.05902932536695447,
+        "closed_lots": 332,
+        "costs": 25532.87309029296,
+        "end": "2023-12-21",
+        "exposure": 0.8287485224102975,
+        "max_drawdown": -0.3501640410726956,
+        "number_of_trades": 677,
+        "periods": 999,
+        "profit_factor": 0.9374048182444094,
+        "sharpe": 0.050038875285925495,
+        "sortino": 0.07050971581135634,
+        "start": "2020-01-03",
+        "total_return": -0.07946503458085363,
+        "turnover": 122.24147197509122,
+        "volatility": 0.26027480259862656,
+        "win_rate": 0.5331325301204819
+      },
+      "50": {
+        "average_trade_return": -0.0038235956994004533,
+        "cagr": -0.09342785010009724,
+        "calmar": -0.1922386986516174,
+        "closed_lots": 340,
+        "costs": 44184.84892480179,
+        "end": "2023-12-21",
+        "exposure": 0.8287485224102975,
+        "max_drawdown": -0.48599918099430595,
+        "number_of_trades": 677,
+        "periods": 999,
+        "profit_factor": 0.7361757633083321,
+        "sharpe": -0.2460072645251552,
+        "sortino": -0.34141764835124117,
+        "start": "2020-01-03",
+        "total_return": -0.322154313062026,
+        "turnover": 122.08575679000283,
+        "volatility": 0.260491985414404,
+        "win_rate": 0.49117647058823527
+      }
+    },
+    "rf_window756": {
+      "0": {
+        "average_trade_return": 0.007030001519854449,
+        "cagr": 0.03395714206907985,
+        "calmar": 0.1096847848414008,
+        "closed_lots": 337,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.8054627868874386,
+        "max_drawdown": -0.30958844581935707,
+        "number_of_trades": 696,
+        "periods": 999,
+        "profit_factor": 1.096748117553764,
+        "sharpe": 0.25882511265652625,
+        "sortino": 0.3634474854529054,
+        "start": "2020-01-03",
+        "total_return": 0.1415428075229428,
+        "turnover": 144.09424455577783,
+        "volatility": 0.2646023011723062,
+        "win_rate": 0.5578635014836796
+      },
+      "10": {
+        "average_trade_return": 0.005071015396259046,
+        "cagr": -0.002949007249868796,
+        "calmar": -0.00877309475889141,
+        "closed_lots": 339,
+        "costs": 13477.406294432554,
+        "end": "2023-12-21",
+        "exposure": 0.8054627868874386,
+        "max_drawdown": -0.33614218595781353,
+        "number_of_trades": 696,
+        "periods": 999,
+        "profit_factor": 0.9919086480704562,
+        "sharpe": 0.12122559356558434,
+        "sortino": 0.16906630771945735,
+        "start": "2020-01-03",
+        "total_return": -0.01163970757905719,
+        "turnover": 144.00664181494605,
+        "volatility": 0.2641200028190672,
+        "win_rate": 0.5457227138643068
+      },
+      "25": {
+        "average_trade_return": 0.002299737090944523,
+        "cagr": -0.05584953313637875,
+        "calmar": -0.14930051165072308,
+        "closed_lots": 344,
+        "costs": 30347.638384434842,
+        "end": "2023-12-21",
+        "exposure": 0.8054627868874386,
+        "max_drawdown": -0.37407462652930745,
+        "number_of_trades": 696,
+        "periods": 999,
+        "profit_factor": 0.8545915700933988,
+        "sharpe": -0.08572504210471962,
+        "sortino": -0.11833644719537657,
+        "start": "2020-01-03",
+        "total_return": -0.2037375530412585,
+        "turnover": 143.87793614442413,
+        "volatility": 0.2636549567240179,
+        "win_rate": 0.5203488372093024
+      },
+      "50": {
+        "average_trade_return": -0.0024611104589479607,
+        "cagr": -0.13785738242810852,
+        "calmar": -0.27652841041313864,
+        "closed_lots": 352,
+        "costs": 51425.1033700713,
+        "end": "2023-12-21",
+        "exposure": 0.8054627868874386,
+        "max_drawdown": -0.49852882104282525,
+        "number_of_trades": 696,
+        "periods": 999,
+        "profit_factor": 0.6691045189366008,
+        "sharpe": -0.43037291008917616,
+        "sortino": -0.5840071730412655,
+        "start": "2020-01-03",
+        "total_return": -0.4445855161613478,
+        "turnover": 143.67487306650776,
+        "volatility": 0.2635674612640105,
+        "win_rate": 0.48011363636363635
+      }
+    },
+    "trend200": {
+      "0": {
+        "average_trade_return": 0.17666620486430581,
+        "cagr": 0.21991559085658197,
+        "calmar": 0.8166095526180684,
+        "closed_lots": 332,
+        "costs": 0.0,
+        "end": "2023-12-21",
+        "exposure": 0.9445528873599761,
+        "max_drawdown": -0.2693032308421175,
+        "number_of_trades": 628,
+        "periods": 999,
+        "profit_factor": 2.496654570845812,
+        "sharpe": 0.9441594641238813,
+        "sortino": 1.339373625806907,
+        "start": "2020-01-03",
+        "total_return": 1.1990541339752667,
+        "turnover": 43.94514308689578,
+        "volatility": 0.24160967625605712,
+        "win_rate": 0.8825301204819277
+      },
+      "10": {
+        "average_trade_return": 0.17552305067310214,
+        "cagr": 0.20646442030948764,
+        "calmar": 0.7610783445297247,
+        "closed_lots": 335,
+        "costs": 7329.371685121325,
+        "end": "2023-12-21",
+        "exposure": 0.9445528873599761,
+        "max_drawdown": -0.27127880039349084,
+        "number_of_trades": 628,
+        "periods": 999,
+        "profit_factor": 2.3463751666712143,
+        "sharpe": 0.8984216338590677,
+        "sortino": 1.2716075218912437,
+        "start": "2020-01-03",
+        "total_return": 1.1044898817413111,
+        "turnover": 43.94013704989983,
+        "volatility": 0.2415438658194635,
+        "win_rate": 0.8686567164179104
+      },
+      "25": {
+        "average_trade_return": 0.17192925883708782,
+        "cagr": 0.18655454309048758,
+        "calmar": 0.6802736159629493,
+        "closed_lots": 337,
+        "costs": 17663.744403984827,
+        "end": "2023-12-21",
+        "exposure": 0.9445528873599761,
+        "max_drawdown": -0.2742345707857765,
+        "number_of_trades": 628,
+        "periods": 999,
+        "profit_factor": 2.1433534984264497,
+        "sharpe": 0.8296086364095929,
+        "sortino": 1.170237714642484,
+        "start": "2020-01-03",
+        "total_return": 0.97014274444101,
+        "turnover": 43.93329428405016,
+        "volatility": 0.2414967555923021,
+        "win_rate": 0.8694362017804155
+      },
+      "50": {
+        "average_trade_return": 0.16741286778171655,
+        "cagr": 0.15406504899280726,
+        "calmar": 0.5519261616191496,
+        "closed_lots": 343,
+        "costs": 33258.360314007135,
+        "end": "2023-12-21",
+        "exposure": 0.9445528873599761,
+        "max_drawdown": -0.2791406889299045,
+        "number_of_trades": 628,
+        "periods": 999,
+        "profit_factor": 1.8594886313818202,
+        "sharpe": 0.714479211306629,
+        "sortino": 1.0021383362517164,
+        "start": "2020-01-03",
+        "total_return": 0.764812795702086,
+        "turnover": 43.92601468264042,
+        "volatility": 0.24155592025085973,
+        "win_rate": 0.8513119533527697
+      }
+    }
+  },
+  "data_hash": "2697ed1baf493a5be31163bb548cc1c9e67546b2d08ae88f826b42b4dd129f9e",
+  "failed_experiments": [],
+  "features": 53,
+  "gates": {
+    "gradient_boosting": {
+      "all_block_lower_bounds_positive": false,
+      "all_pass": false,
+      "drawdown_not_worse_equal_weight": false,
+      "every_year_excess": false,
+      "net_excess_10_and_25bps": false,
+      "predictive": false
+    },
+    "linear": {
+      "all_block_lower_bounds_positive": false,
+      "all_pass": false,
+      "drawdown_not_worse_equal_weight": false,
+      "every_year_excess": false,
+      "net_excess_10_and_25bps": false,
+      "predictive": false
+    },
+    "random_forest": {
+      "all_block_lower_bounds_positive": false,
+      "all_pass": false,
+      "drawdown_not_worse_equal_weight": false,
+      "every_year_excess": false,
+      "net_excess_10_and_25bps": false,
+      "predictive": false
+    }
+  },
+  "independent_holdout": false,
+  "label": "full development",
+  "omit_stock_allocation_only": {
+    "gradient_boosting": {
+      "AAPL": {
+        "average_trade_return": 0.005181899749552575,
+        "cagr": 0.060950152250515144,
+        "calmar": 0.1872495707176631,
+        "closed_lots": 328,
+        "costs": 12887.222282369974,
+        "end": "2023-12-21",
+        "exposure": 0.8087429746607782,
+        "max_drawdown": -0.3255022268778198,
+        "number_of_trades": 674,
+        "periods": 999,
+        "profit_factor": 1.181138076197314,
+        "sharpe": 0.36248241015176375,
+        "sortino": 0.5198222441180016,
+        "start": "2020-01-03",
+        "total_return": 0.2643352315280545,
+        "turnover": 128.21794740839593,
+        "volatility": 0.2484760929054157,
+        "win_rate": 0.5487804878048781
+      },
+      "AMZN": {
+        "average_trade_return": 0.00810540302067033,
+        "cagr": 0.027052202269392644,
+        "calmar": 0.0755309211950829,
+        "closed_lots": 332,
+        "costs": 13302.757273980224,
+        "end": "2023-12-21",
+        "exposure": 0.804017891370927,
+        "max_drawdown": -0.35816062933380133,
+        "number_of_trades": 686,
+        "periods": 999,
+        "profit_factor": 1.0751009504380427,
+        "sharpe": 0.231532743776403,
+        "sortino": 0.32483411674745843,
+        "start": "2020-01-03",
+        "total_return": 0.11161923789927819,
+        "turnover": 138.20021418187827,
+        "volatility": 0.23526232104782568,
+        "win_rate": 0.5481927710843374
+      },
+      "GOOGL": {
+        "average_trade_return": 0.01034211516721111,
+        "cagr": 0.06836695682331406,
+        "calmar": 0.21107860258772426,
+        "closed_lots": 336,
+        "costs": 14190.540691109063,
+        "end": "2023-12-21",
+        "exposure": 0.8173137140347217,
+        "max_drawdown": -0.32389335529592944,
+        "number_of_trades": 691,
+        "periods": 999,
+        "profit_factor": 1.1955449445898543,
+        "sharpe": 0.39236423275382204,
+        "sortino": 0.5584063951385746,
+        "start": "2020-01-03",
+        "total_return": 0.2997387269548555,
+        "turnover": 136.25965225146606,
+        "volatility": 0.24558116555419707,
+        "win_rate": 0.5476190476190477
+      },
+      "JNJ": {
+        "average_trade_return": 0.008343921661796818,
+        "cagr": 0.0950822089678196,
+        "calmar": 0.28511475160768357,
+        "closed_lots": 347,
+        "costs": 14816.557668069363,
+        "end": "2023-12-21",
+        "exposure": 0.8172115999831903,
+        "max_drawdown": -0.33348751136753607,
+        "number_of_trades": 697,
+        "periods": 999,
+        "profit_factor": 1.2854169283336347,
+        "sharpe": 0.4787789329260494,
+        "sortino": 0.6884871250129557,
+        "start": "2020-01-03",
+        "total_return": 0.4334352556038217,
+        "turnover": 140.04694411479448,
+        "volatility": 0.26086080993511235,
+        "win_rate": 0.590778097982709
+      },
+      "JPM": {
+        "average_trade_return": 0.014832471197235568,
+        "cagr": 0.08748442079559271,
+        "calmar": 0.2644871364175824,
+        "closed_lots": 330,
+        "costs": 15226.685147775668,
+        "end": "2023-12-21",
+        "exposure": 0.8106761949974673,
+        "max_drawdown": -0.33077004039042923,
+        "number_of_trades": 683,
+        "periods": 999,
+        "profit_factor": 1.2258282073100257,
+        "sharpe": 0.46357266912650114,
+        "sortino": 0.6645452287686329,
+        "start": "2020-01-03",
+        "total_return": 0.39441277529871055,
+        "turnover": 133.59940866590574,
+        "volatility": 0.24664721815333002,
+        "win_rate": 0.5909090909090909
+      },
+      "MSFT": {
+        "average_trade_return": 0.01765916654854194,
+        "cagr": 0.07355257208001365,
+        "calmar": 0.22034114180510353,
+        "closed_lots": 334,
+        "costs": 14504.27823944836,
+        "end": "2023-12-21",
+        "exposure": 0.819000896681705,
+        "max_drawdown": -0.33381224894020234,
+        "number_of_trades": 698,
+        "periods": 999,
+        "profit_factor": 1.2018932766918662,
+        "sharpe": 0.4077502756402562,
+        "sortino": 0.586172099759026,
+        "start": "2020-01-03",
+        "total_return": 0.3249284763470712,
+        "turnover": 140.309374943443,
+        "volatility": 0.25202892844145863,
+        "win_rate": 0.5838323353293413
+      },
+      "WMT": {
+        "average_trade_return": 0.017593908729515606,
+        "cagr": 0.10340561856356745,
+        "calmar": 0.3086797915076965,
+        "closed_lots": 333,
+        "costs": 15001.243434847149,
+        "end": "2023-12-21",
+        "exposure": 0.8205840337156682,
+        "max_drawdown": -0.3349931592816603,
+        "number_of_trades": 695,
+        "periods": 999,
+        "profit_factor": 1.2906567646752718,
+        "sharpe": 0.5077604254257853,
+        "sortino": 0.7395393644729065,
+        "start": "2020-01-03",
+        "total_return": 0.4771156769623419,
+        "turnover": 137.63631064971597,
+        "volatility": 0.26078321642534324,
+        "win_rate": 0.6006006006006006
+      },
+      "XOM": {
+        "average_trade_return": 0.014359239477166181,
+        "cagr": 0.11983657178151774,
+        "calmar": 0.38588949543985485,
+        "closed_lots": 332,
+        "costs": 17606.90819455139,
+        "end": "2023-12-21",
+        "exposure": 0.8022773187260309,
+        "max_drawdown": -0.3105463434419805,
+        "number_of_trades": 685,
+        "periods": 999,
+        "profit_factor": 1.3262626489754727,
+        "sharpe": 0.5916748521721908,
+        "sortino": 0.8548761441190802,
+        "start": "2020-01-03",
+        "total_return": 0.5662571388197661,
+        "turnover": 138.1858908486882,
+        "volatility": 0.2400574745505433,
+        "win_rate": 0.5783132530120482
+      }
+    },
+    "linear": {
+      "AAPL": {
+        "average_trade_return": -0.0019588285288938633,
+        "cagr": -0.0056613752642104,
+        "calmar": -0.012221617052432297,
+        "closed_lots": 360,
+        "costs": 13772.32443043145,
+        "end": "2023-12-21",
+        "exposure": 0.9113361670736595,
+        "max_drawdown": -0.46322636684837837,
+        "number_of_trades": 746,
+        "periods": 999,
+        "profit_factor": 0.9871788158344117,
+        "sharpe": 0.10344192881278247,
+        "sortino": 0.14253735951414181,
+        "start": "2020-01-03",
+        "total_return": -0.022255685144964232,
+        "turnover": 135.96125247332674,
+        "volatility": 0.2510370946903602,
+        "win_rate": 0.525
+      },
+      "AMZN": {
+        "average_trade_return": 0.0003427728516124258,
+        "cagr": 0.05534757091991982,
+        "calmar": 0.1480329233551821,
+        "closed_lots": 361,
+        "costs": 15919.99049062322,
+        "end": "2023-12-21",
+        "exposure": 0.9148734335175926,
+        "max_drawdown": -0.37388690073438524,
+        "number_of_trades": 758,
+        "periods": 999,
+        "profit_factor": 1.1566844928888778,
+        "sharpe": 0.3454322790619966,
+        "sortino": 0.47608407610189607,
+        "start": "2020-01-03",
+        "total_return": 0.23807372068304455,
+        "turnover": 142.5785575697532,
+        "volatility": 0.23950725819343666,
+        "win_rate": 0.5595567867036011
+      },
+      "GOOGL": {
+        "average_trade_return": -0.002549960712723947,
+        "cagr": -0.03507790421837664,
+        "calmar": -0.08177321405766305,
+        "closed_lots": 355,
+        "costs": 13297.690213820506,
+        "end": "2023-12-21",
+        "exposure": 0.9086819188328142,
+        "max_drawdown": -0.4289657025543985,
+        "number_of_trades": 744,
+        "periods": 999,
+        "profit_factor": 0.915353916682201,
+        "sharpe": -0.018405943042179965,
+        "sortino": -0.02529345748483463,
+        "start": "2020-01-03",
+        "total_return": -0.13199374673393194,
+        "turnover": 136.15434739912592,
+        "volatility": 0.24894299443831341,
+        "win_rate": 0.5183098591549296
+      },
+      "JNJ": {
+        "average_trade_return": -0.0007166853365071602,
+        "cagr": 0.0007520304804831124,
+        "calmar": 0.0015245310800892007,
+        "closed_lots": 365,
+        "costs": 14531.046809954725,
+        "end": "2023-12-21",
+        "exposure": 0.9146296914958837,
+        "max_drawdown": -0.4932864211853988,
+        "number_of_trades": 754,
+        "periods": 999,
+        "profit_factor": 1.0017292112538478,
+        "sharpe": 0.13544165854130297,
+        "sortino": 0.18680589384268753,
+        "start": "2020-01-03",
+        "total_return": 0.0029845882930283896,
+        "turnover": 140.0272507998585,
+        "volatility": 0.26412614020285524,
+        "win_rate": 0.5424657534246575
+      },
+      "JPM": {
+        "average_trade_return": 0.0018382033966367587,
+        "cagr": 0.02630819677708529,
+        "calmar": 0.062212923565696986,
+        "closed_lots": 366,
+        "costs": 15557.215698864868,
+        "end": "2023-12-21",
+        "exposure": 0.9045088636469107,
+        "max_drawdown": -0.4228735007012454,
+        "number_of_trades": 743,
+        "periods": 999,
+        "profit_factor": 1.061568509313289,
+        "sharpe": 0.22909041589322987,
+        "sortino": 0.31580287116820205,
+        "start": "2020-01-03",
+        "total_return": 0.10843035696602654,
+        "turnover": 136.42096327564042,
+        "volatility": 0.24637912845668788,
+        "win_rate": 0.5382513661202186
+      },
+      "MSFT": {
+        "average_trade_return": -0.004231478094307067,
+        "cagr": -0.05608355316957658,
+        "calmar": -0.11427580113667532,
+        "closed_lots": 377,
+        "costs": 13721.195973022306,
+        "end": "2023-12-21",
+        "exposure": 0.9210192322791952,
+        "max_drawdown": -0.49077365996760713,
+        "number_of_trades": 757,
+        "periods": 999,
+        "profit_factor": 0.8821251693116703,
+        "sharpe": -0.1015565499628051,
+        "sortino": -0.13858620399275662,
+        "start": "2020-01-03",
+        "total_return": -0.20451967315812491,
+        "turnover": 139.40044357369533,
+        "volatility": 0.252612589447437,
+        "win_rate": 0.5172413793103449
+      },
+      "WMT": {
+        "average_trade_return": -0.0035500211513149874,
+        "cagr": -0.014031782925574388,
+        "calmar": -0.029456797963953958,
+        "closed_lots": 366,
+        "costs": 14692.74393583721,
+        "end": "2023-12-21",
+        "exposure": 0.9063311014789347,
+        "max_drawdown": -0.4763512633907109,
+        "number_of_trades": 745,
+        "periods": 999,
+        "profit_factor": 0.9694423594529893,
+        "sharpe": 0.07829068661275121,
+        "sortino": 0.109087399312203,
+        "start": "2020-01-03",
+        "total_return": -0.05447972946970581,
+        "turnover": 137.2779469525039,
+        "volatility": 0.26314552143734066,
+        "win_rate": 0.5245901639344263
+      },
+      "XOM": {
+        "average_trade_return": 0.006551358513695229,
+        "cagr": 0.08624505423393214,
+        "calmar": 0.1989421375557949,
+        "closed_lots": 357,
+        "costs": 18658.4740500604,
+        "end": "2023-12-21",
+        "exposure": 0.8998411554830671,
+        "max_drawdown": -0.4335182847311271,
+        "number_of_trades": 750,
+        "periods": 999,
+        "profit_factor": 1.2136355685044726,
+        "sharpe": 0.4642459598604116,
+        "sortino": 0.650398077403225,
+        "start": "2020-01-03",
+        "total_return": 0.3881235178486695,
+        "turnover": 143.18483893217842,
+        "volatility": 0.24088307909030782,
+        "win_rate": 0.5714285714285714
+      }
+    },
+    "random_forest": {
+      "AAPL": {
+        "average_trade_return": 0.010504907704509006,
+        "cagr": 0.08746611388330372,
+        "calmar": 0.3142509793471232,
+        "closed_lots": 313,
+        "costs": 12259.82733950255,
+        "end": "2023-12-21",
+        "exposure": 0.826708334474703,
+        "max_drawdown": -0.2783320327752685,
+        "number_of_trades": 668,
+        "periods": 999,
+        "profit_factor": 1.3201274556989464,
+        "sharpe": 0.454240695216156,
+        "sortino": 0.6558385645413337,
+        "start": "2020-01-03",
+        "total_return": 0.3943197207684186,
+        "turnover": 117.1185182210098,
+        "volatility": 0.25777048619764625,
+        "win_rate": 0.597444089456869
+      },
+      "AMZN": {
+        "average_trade_return": 0.0029651334573796238,
+        "cagr": 0.06800273962894576,
+        "calmar": 0.20263017478252646,
+        "closed_lots": 322,
+        "costs": 11316.287116923371,
+        "end": "2023-12-21",
+        "exposure": 0.8284226304613574,
+        "max_drawdown": -0.3356002614217253,
+        "number_of_trades": 663,
+        "periods": 999,
+        "profit_factor": 1.2649361838316031,
+        "sharpe": 0.3944446388649584,
+        "sortino": 0.5606390181799777,
+        "start": "2020-01-03",
+        "total_return": 0.2979830623312534,
+        "turnover": 113.05715927245255,
+        "volatility": 0.2399161876641057,
+        "win_rate": 0.562111801242236
+      },
+      "GOOGL": {
+        "average_trade_return": 0.009944444785580561,
+        "cagr": 0.10303147369538324,
+        "calmar": 0.35789985336701985,
+        "closed_lots": 309,
+        "costs": 12038.907521802383,
+        "end": "2023-12-21",
+        "exposure": 0.8284226304613574,
+        "max_drawdown": -0.2878779433019949,
+        "number_of_trades": 660,
+        "periods": 999,
+        "profit_factor": 1.4048821656402513,
+        "sharpe": 0.5156627621973439,
+        "sortino": 0.7445079806977841,
+        "start": "2020-01-03",
+        "total_return": 0.4751311098605804,
+        "turnover": 111.3222372788567,
+        "volatility": 0.25164236388719197,
+        "win_rate": 0.5792880258899676
+      },
+      "JNJ": {
+        "average_trade_return": 0.00923854852600122,
+        "cagr": 0.10000151461435935,
+        "calmar": 0.32276738954032363,
+        "closed_lots": 327,
+        "costs": 11527.61645911635,
+        "end": "2023-12-21",
+        "exposure": 0.8268115335161718,
+        "max_drawdown": -0.30982533507111343,
+        "number_of_trades": 661,
+        "periods": 999,
+        "profit_factor": 1.39444062995702,
+        "sharpe": 0.4904527467184625,
+        "sortino": 0.702631201644042,
+        "start": "2020-01-03",
+        "total_return": 0.45913273592571957,
+        "turnover": 112.40620118939798,
+        "volatility": 0.26727955303493417,
+        "win_rate": 0.5871559633027523
+      },
+      "JPM": {
+        "average_trade_return": 0.011332618060233056,
+        "cagr": 0.11830544106340013,
+        "calmar": 0.41132158588182477,
+        "closed_lots": 321,
+        "costs": 13420.003521811894,
+        "end": "2023-12-21",
+        "exposure": 0.8182170813943321,
+        "max_drawdown": -0.28762273881096534,
+        "number_of_trades": 661,
+        "periods": 999,
+        "profit_factor": 1.4264507299575877,
+        "sharpe": 0.5706395400332716,
+        "sortino": 0.8171798552453083,
+        "start": "2020-01-03",
+        "total_return": 0.5577847587456621,
+        "turnover": 115.67158943647951,
+        "volatility": 0.25147167225218464,
+        "win_rate": 0.6074766355140186
+      },
+      "MSFT": {
+        "average_trade_return": 0.008028275464398969,
+        "cagr": 0.08265394963585315,
+        "calmar": 0.28671979586265495,
+        "closed_lots": 314,
+        "costs": 11654.622740973738,
+        "end": "2023-12-21",
+        "exposure": 0.8284226304613574,
+        "max_drawdown": -0.28827430414133737,
+        "number_of_trades": 664,
+        "periods": 999,
+        "profit_factor": 1.3154978800282722,
+        "sharpe": 0.43653346320775666,
+        "sortino": 0.6293936230773628,
+        "start": "2020-01-03",
+        "total_return": 0.37001992880163836,
+        "turnover": 113.80019478958087,
+        "volatility": 0.25852640260628995,
+        "win_rate": 0.5859872611464968
+      },
+      "WMT": {
+        "average_trade_return": 0.010407991288736878,
+        "cagr": 0.10894862570794683,
+        "calmar": 0.37809559360682427,
+        "closed_lots": 326,
+        "costs": 12722.704318467095,
+        "end": "2023-12-21",
+        "exposure": 0.8268127015183737,
+        "max_drawdown": -0.2881510061215916,
+        "number_of_trades": 664,
+        "periods": 999,
+        "profit_factor": 1.4041287059475698,
+        "sharpe": 0.5226095814861396,
+        "sortino": 0.7597679165838325,
+        "start": "2020-01-03",
+        "total_return": 0.5067518335762422,
+        "turnover": 114.46686926049577,
+        "volatility": 0.2651634879305378,
+        "win_rate": 0.5950920245398773
+      },
+      "XOM": {
+        "average_trade_return": 0.013297099343570378,
+        "cagr": 0.14760664495060793,
+        "calmar": 0.5033623799044259,
+        "closed_lots": 320,
+        "costs": 15678.270756592186,
+        "end": "2023-12-21",
+        "exposure": 0.8251243924217989,
+        "max_drawdown": -0.29324131250856333,
+        "number_of_trades": 665,
+        "periods": 999,
+        "profit_factor": 1.5172503588897694,
+        "sharpe": 0.6841862194593472,
+        "sortino": 0.9815358062083213,
+        "start": "2020-01-03",
+        "total_return": 0.7259839418658676,
+        "turnover": 115.61891012808111,
+        "volatility": 0.24532839395211303,
+        "win_rate": 0.621875
+      }
+    }
+  },
+  "paired_mse_intervals": {
+    "gradient_boosting": {
+      "20": {
+        "block": 20,
+        "dates": 1000,
+        "estimate": 0.00015400219447468972,
+        "high": 0.0003294448960397539,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.7178564315336975,
+        "low": 2.367970123642617e-05,
+        "reps": 1000
+      },
+      "5": {
+        "block": 5,
+        "dates": 1000,
+        "estimate": 0.00015400219447468972,
+        "high": 0.00025994987493115583,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.7178564315336975,
+        "low": 5.8383912695041695e-05,
+        "reps": 1000
+      },
+      "60": {
+        "block": 60,
+        "dates": 1000,
+        "estimate": 0.00015400219447468972,
+        "high": 0.0004188131648720233,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.7178564315336975,
+        "low": 1.0935014203907413e-05,
+        "reps": 1000
+      }
+    },
+    "linear": {
+      "20": {
+        "block": 20,
+        "dates": 1000,
+        "estimate": 4.897306449920798e-05,
+        "high": 0.00010577903897052633,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.5983105449393196,
+        "low": -2.6897817293294905e-06,
+        "reps": 1000
+      },
+      "5": {
+        "block": 5,
+        "dates": 1000,
+        "estimate": 4.897306449920798e-05,
+        "high": 0.00010543637077480212,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.5983105449393196,
+        "low": 8.698728615993772e-07,
+        "reps": 1000
+      },
+      "60": {
+        "block": 60,
+        "dates": 1000,
+        "estimate": 4.897306449920798e-05,
+        "high": 9.622844206122375e-05,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.5983105449393196,
+        "low": 7.866523176862434e-06,
+        "reps": 1000
+      }
+    },
+    "random_forest": {
+      "20": {
+        "block": 20,
+        "dates": 1000,
+        "estimate": 0.00018187861399901324,
+        "high": 0.00042503403160096644,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.7460579822024872,
+        "low": 8.882008640671336e-06,
+        "reps": 1000
+      },
+      "5": {
+        "block": 5,
+        "dates": 1000,
+        "estimate": 0.00018187861399901324,
+        "high": 0.00031232858839163414,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.7460579822024872,
+        "low": 6.358473983644393e-05,
+        "reps": 1000
+      },
+      "60": {
+        "block": 60,
+        "dates": 1000,
+        "estimate": 0.00018187861399901324,
+        "high": 0.0005461815461372818,
+        "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+        "lag1_autocorrelation": 0.7460579822024872,
+        "low": -1.1955222707982332e-05,
+        "reps": 1000
+      }
+    }
+  },
+  "paired_return_intervals": {
+    "gradient_boosting": {
+      "SPY_buyhold": {
+        "20": {
+          "block": 20,
+          "dates": 999,
+          "estimate": -0.02335399945310059,
+          "high": 0.12083413609513813,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.013768686767031132,
+          "low": -0.1552739554224498,
+          "reps": 1000
+        },
+        "5": {
+          "block": 5,
+          "dates": 999,
+          "estimate": -0.02335399945310059,
+          "high": 0.11785633608057208,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.013768686767031132,
+          "low": -0.16665053348966974,
+          "reps": 1000
+        },
+        "60": {
+          "block": 60,
+          "dates": 999,
+          "estimate": -0.02335399945310059,
+          "high": 0.1291280564679962,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.013768686767031132,
+          "low": -0.16961447360144963,
+          "reps": 1000
+        }
+      },
+      "equal_weight_buyhold": {
+        "20": {
+          "block": 20,
+          "dates": 999,
+          "estimate": -0.06319888640383402,
+          "high": 0.06957556683251633,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.012071153669190598,
+          "low": -0.19609777503646064,
+          "reps": 1000
+        },
+        "5": {
+          "block": 5,
+          "dates": 999,
+          "estimate": -0.06319888640383402,
+          "high": 0.07770408789432881,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.012071153669190598,
+          "low": -0.19882259415976467,
+          "reps": 1000
+        },
+        "60": {
+          "block": 60,
+          "dates": 999,
+          "estimate": -0.06319888640383402,
+          "high": 0.07110749029041485,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.012071153669190598,
+          "low": -0.20136849747913593,
+          "reps": 1000
+        }
+      }
+    },
+    "linear": {
+      "SPY_buyhold": {
+        "20": {
+          "block": 20,
+          "dates": 999,
+          "estimate": -0.1328146605783984,
+          "high": 0.00957976098294643,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.09034470881779631,
+          "low": -0.26643219872461943,
+          "reps": 1000
+        },
+        "5": {
+          "block": 5,
+          "dates": 999,
+          "estimate": -0.1328146605783984,
+          "high": 0.002918237850876171,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.09034470881779631,
+          "low": -0.2678296931347097,
+          "reps": 1000
+        },
+        "60": {
+          "block": 60,
+          "dates": 999,
+          "estimate": -0.1328146605783984,
+          "high": 0.006634662674262123,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.09034470881779631,
+          "low": -0.27276829670578634,
+          "reps": 1000
+        }
+      },
+      "equal_weight_buyhold": {
+        "20": {
+          "block": 20,
+          "dates": 999,
+          "estimate": -0.17265954752913185,
+          "high": -0.04235820305642043,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.042874708355657834,
+          "low": -0.31162942197135757,
+          "reps": 1000
+        },
+        "5": {
+          "block": 5,
+          "dates": 999,
+          "estimate": -0.17265954752913185,
+          "high": -0.03917365848276068,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.042874708355657834,
+          "low": -0.30651543528568137,
+          "reps": 1000
+        },
+        "60": {
+          "block": 60,
+          "dates": 999,
+          "estimate": -0.17265954752913185,
+          "high": -0.03936541504449745,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.042874708355657834,
+          "low": -0.29868259494156063,
+          "reps": 1000
+        }
+      }
+    },
+    "random_forest": {
+      "SPY_buyhold": {
+        "20": {
+          "block": 20,
+          "dates": 999,
+          "estimate": -0.026197608128538673,
+          "high": 0.11619536352006009,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.05782969422125161,
+          "low": -0.15724041177924933,
+          "reps": 1000
+        },
+        "5": {
+          "block": 5,
+          "dates": 999,
+          "estimate": -0.026197608128538673,
+          "high": 0.11636033006730856,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.05782969422125161,
+          "low": -0.1570199391038684,
+          "reps": 1000
+        },
+        "60": {
+          "block": 60,
+          "dates": 999,
+          "estimate": -0.026197608128538673,
+          "high": 0.1164511607801374,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.05782969422125161,
+          "low": -0.1857269421763868,
+          "reps": 1000
+        }
+      },
+      "equal_weight_buyhold": {
+        "20": {
+          "block": 20,
+          "dates": 999,
+          "estimate": -0.06604249507927211,
+          "high": 0.06438802517838066,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.020436121762144422,
+          "low": -0.19675276184026938,
+          "reps": 1000
+        },
+        "5": {
+          "block": 5,
+          "dates": 999,
+          "estimate": -0.06604249507927211,
+          "high": 0.07816098940866455,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.020436121762144422,
+          "low": -0.2113510843167826,
+          "reps": 1000
+        },
+        "60": {
+          "block": 60,
+          "dates": 999,
+          "estimate": -0.06604249507927211,
+          "high": 0.05583113381704922,
+          "interpretation": "Approximate stationary circular-block percentile interval; not multiplicity-adjusted, not proof of alpha",
+          "lag1_autocorrelation": -0.020436121762144422,
+          "low": -0.20972234094488681,
+          "reps": 1000
+        }
+      }
+    }
+  },
+  "performance": {
+    "SPY_buyhold": {
+      "average_trade_return": 0.5597738614657359,
+      "cagr": 0.11866547051375198,
+      "calmar": 0.37026309861900597,
+      "closed_lots": 1,
+      "costs": 256.0336195663398,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": 0.0,
+      "excess_total_return_vs_equal_weight": -0.25641313098807705,
+      "exposure": 1.0,
+      "max_drawdown": -0.3204895949835298,
+      "number_of_trades": 2,
+      "periods": 999,
+      "profit_factor": null,
+      "sharpe": 0.6361880098983507,
+      "sortino": 0.8666581337521352,
+      "start": "2020-01-03",
+      "total_return": 0.5597738614657362,
+      "turnover": 1.9990009990009991,
+      "volatility": 0.2117343933203007,
+      "win_rate": 1.0
+    },
+    "equal_weight_buyhold": {
+      "average_trade_return": 0.8161869924538128,
+      "cagr": 0.16244880451148003,
+      "calmar": 0.6199415549423182,
+      "closed_lots": 8,
+      "costs": 281.70059964522636,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": 0.25641313098807705,
+      "excess_total_return_vs_equal_weight": 0.0,
+      "exposure": 1.0,
+      "max_drawdown": -0.26203890224231685,
+      "number_of_trades": 16,
+      "periods": 999,
+      "profit_factor": null,
+      "sharpe": 0.7987690372315678,
+      "sortino": 1.1071632969978336,
+      "start": "2020-01-03",
+      "total_return": 0.8161869924538132,
+      "turnover": 1.9990009990009994,
+      "volatility": 0.21852095052303305,
+      "win_rate": 1.0
+    },
+    "gradient_boosting": {
+      "average_trade_return": 0.01295791501745829,
+      "cagr": 0.08263075627445104,
+      "calmar": 0.2466640108461904,
+      "closed_lots": 342,
+      "costs": 15594.74481338888,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.18987027882924967,
+      "excess_total_return_vs_equal_weight": -0.4462834098173267,
+      "exposure": 0.8205840337156682,
+      "max_drawdown": -0.3349931592816603,
+      "number_of_trades": 711,
+      "periods": 999,
+      "profit_factor": 1.2179829725941962,
+      "sharpe": 0.44074116573030636,
+      "sortino": 0.6341211201140019,
+      "start": "2020-01-03",
+      "total_return": 0.3699035826364865,
+      "turnover": 148.19189560626546,
+      "volatility": 0.25264007884507794,
+      "win_rate": 0.5789473684210527
+    },
+    "historical_mean": {
+      "average_trade_return": 0.38080329068183333,
+      "cagr": 0.23535536838187698,
+      "calmar": 0.6126147765780601,
+      "closed_lots": 298,
+      "costs": 857.110080701431,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": 0.7517019068890038,
+      "excess_total_return_vs_equal_weight": 0.4952887759009268,
+      "exposure": 1.0,
+      "max_drawdown": -0.38418167073364373,
+      "number_of_trades": 603,
+      "periods": 999,
+      "profit_factor": 38.480206614360455,
+      "sharpe": 0.8456714505335095,
+      "sortino": 1.2158008710918284,
+      "start": "2020-01-03",
+      "total_return": 1.31147576835474,
+      "turnover": 5.12093540670509,
+      "volatility": 0.3051445631246944,
+      "win_rate": 0.9060402684563759
+    },
+    "linear": {
+      "average_trade_return": -0.0017834079823344116,
+      "cagr": -0.030339856986962288,
+      "calmar": -0.06314465513436565,
+      "closed_lots": 381,
+      "costs": 15021.193936970441,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.6747478150664873,
+      "excess_total_return_vs_equal_weight": -0.9311609460545643,
+      "exposure": 0.9260357417263536,
+      "max_drawdown": -0.4804817909354646,
+      "number_of_trades": 775,
+      "periods": 999,
+      "profit_factor": 0.9345661048852868,
+      "sharpe": 0.007401516109595846,
+      "sortino": 0.010125595624440688,
+      "start": "2020-01-03",
+      "total_return": -0.11497395360075113,
+      "turnover": 149.0669502440417,
+      "volatility": 0.2551128319007911,
+      "win_rate": 0.5223097112860893
+    },
+    "linear_alpha20": {
+      "average_trade_return": -0.002741612719272243,
+      "cagr": -0.03793924654914371,
+      "calmar": -0.0805018046205638,
+      "closed_lots": 376,
+      "costs": 14320.707895584224,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.7019267288929251,
+      "excess_total_return_vs_equal_weight": -0.9583398598810021,
+      "exposure": 0.9193597372919893,
+      "max_drawdown": -0.4712844231004023,
+      "number_of_trades": 765,
+      "periods": 999,
+      "profit_factor": 0.9157828713417124,
+      "sharpe": -0.024166149034613973,
+      "sortino": -0.03307080279896628,
+      "start": "2020-01-03",
+      "total_return": -0.1421528674271889,
+      "turnover": 145.1483334557215,
+      "volatility": 0.2544358216007758,
+      "win_rate": 0.5186170212765957
+    },
+    "linear_alpha5": {
+      "average_trade_return": -0.0014790317130324716,
+      "cagr": -0.03264955065539765,
+      "calmar": -0.07265059009784315,
+      "closed_lots": 385,
+      "costs": 14183.042354151396,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.683075461681285,
+      "excess_total_return_vs_equal_weight": -0.939488592669362,
+      "exposure": 0.9293198545504355,
+      "max_drawdown": -0.4494051680987923,
+      "number_of_trades": 781,
+      "periods": 999,
+      "profit_factor": 0.9284594215164373,
+      "sharpe": -0.0006056399139133253,
+      "sortino": -0.0008199017836946456,
+      "start": "2020-01-03",
+      "total_return": -0.12330160021554881,
+      "turnover": 151.68841301712013,
+      "volatility": 0.25623862909338074,
+      "win_rate": 0.522077922077922
+    },
+    "momentum60": {
+      "average_trade_return": 0.086421027961451,
+      "cagr": 0.1962087500361105,
+      "calmar": 0.9101144255996879,
+      "closed_lots": 356,
+      "costs": 12240.649303339493,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": 0.4746857798618713,
+      "excess_total_return_vs_equal_weight": 0.21827264887379427,
+      "exposure": 0.9492406648710979,
+      "max_drawdown": -0.21558690261043345,
+      "number_of_trades": 673,
+      "periods": 999,
+      "profit_factor": 1.7972258712138571,
+      "sharpe": 0.8897749899686627,
+      "sortino": 1.286069947850473,
+      "start": "2020-01-03",
+      "total_return": 1.0344596413276075,
+      "turnover": 71.8507243996316,
+      "volatility": 0.2315505892920301,
+      "win_rate": 0.7556179775280899
+    },
+    "naive_zero_cash": {
+      "average_trade_return": null,
+      "cagr": 0.0,
+      "calmar": null,
+      "closed_lots": 0,
+      "costs": 0.0,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.5597738614657362,
+      "excess_total_return_vs_equal_weight": -0.8161869924538132,
+      "exposure": 0.0,
+      "max_drawdown": 0.0,
+      "number_of_trades": 0,
+      "periods": 999,
+      "profit_factor": null,
+      "sharpe": null,
+      "sortino": null,
+      "start": "2020-01-03",
+      "total_return": 0.0,
+      "turnover": 0.0,
+      "volatility": 0.0,
+      "win_rate": null
+    },
+    "random_forest": {
+      "average_trade_return": 0.007713313083590979,
+      "cagr": 0.07678990147994758,
+      "calmar": 0.2664918735267032,
+      "closed_lots": 328,
+      "costs": 12151.819053310359,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.21893570289417608,
+      "excess_total_return_vs_equal_weight": -0.47534883388225313,
+      "exposure": 0.8284226304613574,
+      "max_drawdown": -0.28815100612159195,
+      "number_of_trades": 676,
+      "periods": 999,
+      "profit_factor": 1.289154731696869,
+      "sharpe": 0.41308431147068747,
+      "sortino": 0.5947296695384271,
+      "start": "2020-01-03",
+      "total_return": 0.3408381585715601,
+      "turnover": 121.64958099153803,
+      "volatility": 0.2626710121200951,
+      "win_rate": 0.5823170731707317
+    },
+    "rf_leaf20": {
+      "average_trade_return": 0.004493245724388226,
+      "cagr": 0.06620535957538976,
+      "calmar": 0.22047018629418286,
+      "closed_lots": 322,
+      "costs": 12783.626405559753,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.2704288962760375,
+      "excess_total_return_vs_equal_weight": -0.5268420272641146,
+      "exposure": 0.821612134421928,
+      "max_drawdown": -0.3002916661350714,
+      "number_of_trades": 674,
+      "periods": 999,
+      "profit_factor": 1.236488226012413,
+      "sharpe": 0.37671203988397595,
+      "sortino": 0.5284047995620287,
+      "start": "2020-01-03",
+      "total_return": 0.28934496518969866,
+      "turnover": 123.07010011879908,
+      "volatility": 0.2606503870818454,
+      "win_rate": 0.5745341614906833
+    },
+    "rf_leaf80": {
+      "average_trade_return": 0.0038694843765496407,
+      "cagr": 0.025753876517759178,
+      "calmar": 0.08348015078493005,
+      "closed_lots": 331,
+      "costs": 11183.754745621045,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.4537149253533943,
+      "excess_total_return_vs_equal_weight": -0.7101280563414714,
+      "exposure": 0.8287485224102975,
+      "max_drawdown": -0.3085029947311535,
+      "number_of_trades": 677,
+      "periods": 999,
+      "profit_factor": 1.0813400082913176,
+      "sharpe": 0.22797146657026732,
+      "sortino": 0.32419961636647204,
+      "start": "2020-01-03",
+      "total_return": 0.10605893611234185,
+      "turnover": 122.33945345435527,
+      "volatility": 0.2604769368344269,
+      "win_rate": 0.540785498489426
+    },
+    "rf_window756": {
+      "average_trade_return": 0.005071015396259046,
+      "cagr": -0.002949007249868796,
+      "calmar": -0.00877309475889141,
+      "closed_lots": 339,
+      "costs": 13477.406294432554,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": -0.5714135690447933,
+      "excess_total_return_vs_equal_weight": -0.8278267000328704,
+      "exposure": 0.8054627868874386,
+      "max_drawdown": -0.33614218595781353,
+      "number_of_trades": 696,
+      "periods": 999,
+      "profit_factor": 0.9919086480704562,
+      "sharpe": 0.12122559356558434,
+      "sortino": 0.16906630771945735,
+      "start": "2020-01-03",
+      "total_return": -0.01163970757905719,
+      "turnover": 144.00664181494605,
+      "volatility": 0.2641200028190672,
+      "win_rate": 0.5457227138643068
+    },
+    "trend200": {
+      "average_trade_return": 0.17552305067310214,
+      "cagr": 0.20646442030948764,
+      "calmar": 0.7610783445297247,
+      "closed_lots": 335,
+      "costs": 7329.371685121325,
+      "end": "2023-12-21",
+      "excess_total_return_vs_SPY": 0.544716020275575,
+      "excess_total_return_vs_equal_weight": 0.2883028892874979,
+      "exposure": 0.9445528873599761,
+      "max_drawdown": -0.27127880039349084,
+      "number_of_trades": 628,
+      "periods": 999,
+      "profit_factor": 2.3463751666712143,
+      "sharpe": 0.8984216338590677,
+      "sortino": 1.2716075218912437,
+      "start": "2020-01-03",
+      "total_return": 1.1044898817413111,
+      "turnover": 43.94013704989983,
+      "volatility": 0.2415438658194635,
+      "win_rate": 0.8686567164179104
+    }
+  },
+  "plan_hash": "f4da709fea83c3f5fe46a07b5f59353535e116c95c8303a02b03f8d25f4e0603",
+  "prediction_dates": 1000,
+  "prediction_metrics": {
+    "gradient_boosting": {
+      "accuracy": 0.501875,
+      "brier_score": 0.25877379740258716,
+      "calibration": {
+        "mean_probability": [
+          0.3368029057675611,
+          0.4695293875843553,
+          0.5117641486680153,
+          0.5380182686121999,
+          0.5594014614633943,
+          0.5844181026383315,
+          0.6192221101252486,
+          0.699278714410796
+        ],
+        "observed_fraction": [
+          0.541,
+          0.583,
+          0.531,
+          0.511,
+          0.545,
+          0.499,
+          0.528,
+          0.562
+        ]
+      },
+      "confusion_matrix": [
+        [
+          918,
+          2782
+        ],
+        [
+          1203,
+          3097
+        ]
+      ],
+      "correlation": 0.0463132010297356,
+      "directional_accuracy": 0.507625,
+      "f1": 0.6085077119559879,
+      "mae": 0.032215734060150894,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5267902704541588,
+      "r2": -0.0918293395346359,
+      "recall": 0.7202325581395349,
+      "rmse": 0.04357114783546983,
+      "roc_auc": 0.4954985543683218,
+      "rows": 8000
+    },
+    "historical_mean": {
+      "accuracy": 0.5375,
+      "brier_score": 0.2500093778395988,
+      "calibration": {
+        "mean_probability": [
+          0.5291073789628911,
+          0.5519190009331162,
+          0.5562673657256471,
+          0.5637634512350113,
+          0.5787068394996684,
+          0.5914009417988014,
+          0.5989488835997007,
+          0.6117684209566342
+        ],
+        "observed_fraction": [
+          0.5232558139534884,
+          0.53,
+          0.5473790322580645,
+          0.535,
+          0.5188492063492064,
+          0.558,
+          0.522,
+          0.5714285714285714
+        ]
+      },
+      "confusion_matrix": [
+        [
+          0,
+          3700
+        ],
+        [
+          0,
+          4300
+        ]
+      ],
+      "correlation": -0.010092697731723374,
+      "directional_accuracy": 0.5355,
+      "f1": 0.6991869918699187,
+      "mae": 0.03051555296432073,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5375,
+      "r2": -0.0032599466694240853,
+      "recall": 1.0,
+      "rmse": 0.04176652642039648,
+      "roc_auc": 0.5091846008799498,
+      "rows": 8000
+    },
+    "linear": {
+      "accuracy": 0.525375,
+      "brier_score": 0.25560644290024065,
+      "calibration": {
+        "mean_probability": [
+          0.42997206880351857,
+          0.4912257712726816,
+          0.5184757032897257,
+          0.5396813452567953,
+          0.5611173188151325,
+          0.5871656974572123,
+          0.6221648465814263,
+          0.6823993876580626
+        ],
+        "observed_fraction": [
+          0.507,
+          0.56,
+          0.583,
+          0.566,
+          0.56,
+          0.505,
+          0.497,
+          0.522
+        ]
+      },
+      "confusion_matrix": [
+        [
+          836,
+          2864
+        ],
+        [
+          933,
+          3367
+        ]
+      ],
+      "correlation": 0.00541412142805233,
+      "directional_accuracy": 0.515,
+      "f1": 0.6394454467761846,
+      "mae": 0.030920991192780526,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5403627026159525,
+      "r2": -0.03142522447107643,
+      "recall": 0.7830232558139535,
+      "rmse": 0.04234874016691506,
+      "roc_auc": 0.48696706473915774,
+      "rows": 8000
+    },
+    "linear_alpha20": {
+      "accuracy": 0.525375,
+      "brier_score": 0.25560644290024065,
+      "calibration": {
+        "mean_probability": [
+          0.42997206880351857,
+          0.4912257712726816,
+          0.5184757032897257,
+          0.5396813452567953,
+          0.5611173188151325,
+          0.5871656974572123,
+          0.6221648465814263,
+          0.6823993876580626
+        ],
+        "observed_fraction": [
+          0.507,
+          0.56,
+          0.583,
+          0.566,
+          0.56,
+          0.505,
+          0.497,
+          0.522
+        ]
+      },
+      "confusion_matrix": [
+        [
+          836,
+          2864
+        ],
+        [
+          933,
+          3367
+        ]
+      ],
+      "correlation": 0.00608260522044519,
+      "directional_accuracy": 0.514875,
+      "f1": 0.6394454467761846,
+      "mae": 0.03089124953849462,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5403627026159525,
+      "r2": -0.0283260752473955,
+      "recall": 0.7830232558139535,
+      "rmse": 0.04228506914194635,
+      "roc_auc": 0.48696706473915774,
+      "rows": 8000
+    },
+    "linear_alpha5": {
+      "accuracy": 0.525375,
+      "brier_score": 0.25560644290024065,
+      "calibration": {
+        "mean_probability": [
+          0.42997206880351857,
+          0.4912257712726816,
+          0.5184757032897257,
+          0.5396813452567953,
+          0.5611173188151325,
+          0.5871656974572123,
+          0.6221648465814263,
+          0.6823993876580626
+        ],
+        "observed_fraction": [
+          0.507,
+          0.56,
+          0.583,
+          0.566,
+          0.56,
+          0.505,
+          0.497,
+          0.522
+        ]
+      },
+      "confusion_matrix": [
+        [
+          836,
+          2864
+        ],
+        [
+          933,
+          3367
+        ]
+      ],
+      "correlation": 0.0044792399246543525,
+      "directional_accuracy": 0.5145,
+      "f1": 0.6394454467761846,
+      "mae": 0.03095030667312779,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5403627026159525,
+      "r2": -0.034967935065275624,
+      "recall": 0.7830232558139535,
+      "rmse": 0.042421406957739764,
+      "roc_auc": 0.48696706473915774,
+      "rows": 8000
+    },
+    "naive_zero": {
+      "accuracy": 0.5375,
+      "brier_score": 0.25,
+      "calibration": {
+        "mean_probability": [
+          0.5
+        ],
+        "observed_fraction": [
+          0.5375
+        ]
+      },
+      "confusion_matrix": [
+        [
+          0,
+          3700
+        ],
+        [
+          0,
+          4300
+        ]
+      ],
+      "correlation": null,
+      "directional_accuracy": 0.4625,
+      "f1": 0.6991869918699187,
+      "mae": 0.0305989711479607,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5375,
+      "r2": -0.00784836769089936,
+      "recall": 1.0,
+      "rmse": 0.04186192731246224,
+      "roc_auc": 0.5,
+      "rows": 8000
+    },
+    "random_forest": {
+      "accuracy": 0.509125,
+      "brier_score": 0.2608755429897351,
+      "calibration": {
+        "mean_probability": [
+          0.2992301642938841,
+          0.4733001973943932,
+          0.5252856895807174,
+          0.5472192812738893,
+          0.5605853908417322,
+          0.5788665041822395,
+          0.6079230164165581,
+          0.7138098159612575
+        ],
+        "observed_fraction": [
+          0.56,
+          0.563,
+          0.519,
+          0.544,
+          0.542,
+          0.502,
+          0.493,
+          0.577
+        ]
+      },
+      "confusion_matrix": [
+        [
+          819,
+          2881
+        ],
+        [
+          1046,
+          3254
+        ]
+      ],
+      "correlation": 0.04456012971133108,
+      "directional_accuracy": 0.524125,
+      "f1": 0.6236703402012458,
+      "mae": 0.03237440522895349,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5303993480032599,
+      "r2": -0.10786156271786518,
+      "recall": 0.7567441860465116,
+      "rmse": 0.043889877457389766,
+      "roc_auc": 0.49473984915147706,
+      "rows": 8000
+    },
+    "rf_leaf20": {
+      "accuracy": 0.513625,
+      "brier_score": 0.26203197972425957,
+      "calibration": {
+        "mean_probability": [
+          0.2901668105668303,
+          0.47636054684251855,
+          0.5257938320658677,
+          0.5462210147550062,
+          0.5601222521917364,
+          0.5790427645406279,
+          0.6081223314288982,
+          0.7143990949689161
+        ],
+        "observed_fraction": [
+          0.553,
+          0.563,
+          0.515,
+          0.563,
+          0.544,
+          0.498,
+          0.471,
+          0.593
+        ]
+      },
+      "confusion_matrix": [
+        [
+          810,
+          2890
+        ],
+        [
+          1001,
+          3299
+        ]
+      ],
+      "correlation": 0.03778442260419202,
+      "directional_accuracy": 0.523625,
+      "f1": 0.629039946610735,
+      "mae": 0.03258470746293942,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5330424947487478,
+      "r2": -0.13057466641411297,
+      "recall": 0.7672093023255814,
+      "rmse": 0.04433750451785099,
+      "roc_auc": 0.493186203645506,
+      "rows": 8000
+    },
+    "rf_leaf80": {
+      "accuracy": 0.506375,
+      "brier_score": 0.25721294399902617,
+      "calibration": {
+        "mean_probability": [
+          0.3653597019019674,
+          0.4753885447441878,
+          0.5238117892798639,
+          0.5461009862930497,
+          0.5601779267568597,
+          0.5787943087987681,
+          0.6073190949029218,
+          0.7139348411770682
+        ],
+        "observed_fraction": [
+          0.538,
+          0.587,
+          0.518,
+          0.533,
+          0.566,
+          0.496,
+          0.472,
+          0.59
+        ]
+      },
+      "confusion_matrix": [
+        [
+          802,
+          2898
+        ],
+        [
+          1051,
+          3249
+        ]
+      ],
+      "correlation": 0.04849066404834961,
+      "directional_accuracy": 0.516,
+      "f1": 0.6219967454771704,
+      "mae": 0.03140108517291157,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5285505124450952,
+      "r2": -0.03892609926933566,
+      "recall": 0.7555813953488372,
+      "rmse": 0.04250244843455352,
+      "roc_auc": 0.49265681961030794,
+      "rows": 8000
+    },
+    "rf_window756": {
+      "accuracy": 0.50275,
+      "brier_score": 0.2656107291826678,
+      "calibration": {
+        "mean_probability": [
+          0.2988807017979334,
+          0.4451933523112353,
+          0.4988690469477693,
+          0.5287354745318311,
+          0.552696925691843,
+          0.5831505143154517,
+          0.6332726445084537,
+          0.7207266637993844
+        ],
+        "observed_fraction": [
+          0.573,
+          0.543,
+          0.531,
+          0.536,
+          0.545,
+          0.551,
+          0.504,
+          0.517
+        ]
+      },
+      "confusion_matrix": [
+        [
+          1098,
+          2602
+        ],
+        [
+          1376,
+          2924
+        ]
+      ],
+      "correlation": 0.006200309150453629,
+      "directional_accuracy": 0.5115,
+      "f1": 0.5951557093425606,
+      "mae": 0.032924328581548666,
+      "majority_class_accuracy": 0.5375,
+      "precision": 0.5291349981903728,
+      "r2": -0.14436723628722348,
+      "recall": 0.68,
+      "rmse": 0.04460713479383541,
+      "roc_auc": 0.4861284412319296,
+      "rows": 8000
+    }
+  },
+  "regimes": {
+    "SPY_buyhold": {
+      "above_sma200": {
+        "annualized_volatility": 0.1575403455730247,
+        "dates": 720,
+        "mean_daily_return": 0.0009824554184104859
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.3102946642293717,
+        "dates": 279,
+        "mean_daily_return": -0.0006213877750076134
+      }
+    },
+    "equal_weight_buyhold": {
+      "above_sma200": {
+        "annualized_volatility": 0.17233126256891043,
+        "dates": 720,
+        "mean_daily_return": 0.0011183411420910142
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.30690650660164065,
+        "dates": 279,
+        "mean_daily_return": -0.00040590822276337867
+      }
+    },
+    "gradient_boosting": {
+      "above_sma200": {
+        "annualized_volatility": 0.17770915226812872,
+        "dates": 720,
+        "mean_daily_return": 0.0006178295475433327
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.3839065946528033,
+        "dates": 279,
+        "mean_daily_return": -1.225264733382407e-05
+      }
+    },
+    "historical_mean": {
+      "above_sma200": {
+        "annualized_volatility": 0.25412656448238785,
+        "dates": 720,
+        "mean_daily_return": 0.0016005176943125498
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.4080036203895811,
+        "dates": 279,
+        "mean_daily_return": -0.00046373011863962415
+      }
+    },
+    "linear": {
+      "above_sma200": {
+        "annualized_volatility": 0.1959336478567512,
+        "dates": 720,
+        "mean_daily_return": 0.000577106191415694
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.36550543385193013,
+        "dates": 279,
+        "mean_daily_return": -0.0014624767289230284
+      }
+    },
+    "linear_alpha20": {
+      "above_sma200": {
+        "annualized_volatility": 0.19561138138120632,
+        "dates": 720,
+        "mean_daily_return": 0.000503927408519788
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.3644009975606296,
+        "dates": 279,
+        "mean_daily_return": -0.0013878246323660835
+      }
+    },
+    "linear_alpha5": {
+      "above_sma200": {
+        "annualized_volatility": 0.19596707474579425,
+        "dates": 720,
+        "mean_daily_return": 0.0005431251246690335
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.36836707217082854,
+        "dates": 279,
+        "mean_daily_return": -0.0014038182820286962
+      }
+    },
+    "momentum60": {
+      "above_sma200": {
+        "annualized_volatility": 0.22771717380776732,
+        "dates": 720,
+        "mean_daily_return": 0.0012140052804176756
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.24082081270911906,
+        "dates": 279,
+        "mean_daily_return": -0.00020548476329427078
+      }
+    },
+    "naive_zero_cash": {
+      "above_sma200": {
+        "annualized_volatility": 0.0,
+        "dates": 720,
+        "mean_daily_return": 0.0
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.0,
+        "dates": 279,
+        "mean_daily_return": 0.0
+      }
+    },
+    "random_forest": {
+      "above_sma200": {
+        "annualized_volatility": 0.18589891091035599,
+        "dates": 720,
+        "mean_daily_return": 0.0006640225470970484
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.39772360348376157,
+        "dates": 279,
+        "mean_daily_return": -0.0001718649660712199
+      }
+    },
+    "rf_leaf20": {
+      "above_sma200": {
+        "annualized_volatility": 0.18138794001970462,
+        "dates": 720,
+        "mean_daily_return": 0.0006520954500027966
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.39829563806740415,
+        "dates": 279,
+        "mean_daily_return": -0.00028765218144978754
+      }
+    },
+    "rf_leaf80": {
+      "above_sma200": {
+        "annualized_volatility": 0.18795668003427712,
+        "dates": 720,
+        "mean_daily_return": 0.0004016961092899495
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.39004702561414034,
+        "dates": 279,
+        "mean_daily_return": -0.0001928914786509519
+      }
+    },
+    "rf_window756": {
+      "above_sma200": {
+        "annualized_volatility": 0.19142505214135647,
+        "dates": 720,
+        "mean_daily_return": 0.0006212810611711054
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.3938121029316882,
+        "dates": 279,
+        "mean_daily_return": -0.0011483636247470333
+      }
+    },
+    "trend200": {
+      "above_sma200": {
+        "annualized_volatility": 0.2331600038609061,
+        "dates": 720,
+        "mean_daily_return": 0.0012414053978830524
+      },
+      "below_sma200": {
+        "annualized_volatility": 0.2617414769299253,
+        "dates": 279,
+        "mean_daily_return": -0.000120176495538507
+      }
+    }
+  },
+  "single_stock": {
+    "gradient_boosting": {
+      "AAPL": {
+        "prediction_metrics": {
+          "accuracy": 0.532,
+          "brier_score": 0.25370002724303936,
+          "calibration": {
+            "mean_probability": [
+              0.3424402725199167,
+              0.4709355005571598,
+              0.5093313425603575,
+              0.5331509601094102,
+              0.554616327219422,
+              0.5781484070752011,
+              0.610721988094448,
+              0.6981887131528721
+            ],
+            "observed_fraction": [
+              0.5079365079365079,
+              0.5887096774193549,
+              0.544,
+              0.512,
+              0.632,
+              0.568,
+              0.65625,
+              0.5163934426229508
+            ]
+          },
+          "confusion_matrix": [
+            [
+              117,
+              317
+            ],
+            [
+              151,
+              415
+            ]
+          ],
+          "correlation": 0.13150731642177196,
+          "directional_accuracy": 0.541,
+          "f1": 0.6394453004622496,
+          "mae": 0.033057163095397794,
+          "majority_class_accuracy": 0.566,
+          "precision": 0.5669398907103825,
+          "r2": -0.03601503753331259,
+          "recall": 0.7332155477031802,
+          "rmse": 0.043197348658600254,
+          "roc_auc": 0.5218690462620703,
+          "rows": 1000
+        },
+        "realized_pnl": 19824.156656587656
+      },
+      "AMZN": {
+        "prediction_metrics": {
+          "accuracy": 0.504,
+          "brier_score": 0.25540316253005424,
+          "calibration": {
+            "mean_probability": [
+              0.3391761986572301,
+              0.4728334146512672,
+              0.5094750051908722,
+              0.5348933622245023,
+              0.5568034014519325,
+              0.588337447875246,
+              0.6234619635141528,
+              0.6902496345216826
+            ],
+            "observed_fraction": [
+              0.536,
+              0.536,
+              0.56,
+              0.48,
+              0.504,
+              0.46825396825396826,
+              0.5645161290322581,
+              0.576
+            ]
+          },
+          "confusion_matrix": [
+            [
+              122,
+              350
+            ],
+            [
+              146,
+              382
+            ]
+          ],
+          "correlation": 0.07473503167372858,
+          "directional_accuracy": 0.543,
+          "f1": 0.6063492063492063,
+          "mae": 0.03959824726606249,
+          "majority_class_accuracy": 0.528,
+          "precision": 0.5218579234972678,
+          "r2": -0.04524195336849246,
+          "recall": 0.7234848484848485,
+          "rmse": 0.05297894645455405,
+          "roc_auc": 0.512798134951207,
+          "rows": 1000
+        },
+        "realized_pnl": 7354.978689436391
+      },
+      "GOOGL": {
+        "prediction_metrics": {
+          "accuracy": 0.482,
+          "brier_score": 0.2612772538875373,
+          "calibration": {
+            "mean_probability": [
+              0.3510848906183157,
+              0.46473174414648766,
+              0.4972005758490426,
+              0.5248203826209631,
+              0.5487932997895173,
+              0.573074923811834,
+              0.6071132294271564,
+              0.7030518944891828
+            ],
+            "observed_fraction": [
+              0.6,
+              0.616,
+              0.568,
+              0.512,
+              0.568,
+              0.488,
+              0.456,
+              0.56
+            ]
+          },
+          "confusion_matrix": [
+            [
+              128,
+              326
+            ],
+            [
+              192,
+              354
+            ]
+          ],
+          "correlation": 0.0676386865567761,
+          "directional_accuracy": 0.487,
+          "f1": 0.5774877650897227,
+          "mae": 0.03453140582366405,
+          "majority_class_accuracy": 0.546,
+          "precision": 0.5205882352941177,
+          "r2": -0.07960303573195104,
+          "recall": 0.6483516483516484,
+          "rmse": 0.044381461871879385,
+          "roc_auc": 0.4629625147246293,
+          "rows": 1000
+        },
+        "realized_pnl": 484.4972185655188
+      },
+      "JNJ": {
+        "prediction_metrics": {
+          "accuracy": 0.48,
+          "brier_score": 0.265937807431825,
+          "calibration": {
+            "mean_probability": [
+              0.292512426571264,
+              0.4468345847758348,
+              0.5235625639795107,
+              0.5493155921011504,
+              0.5767950685886889,
+              0.6027186160002913,
+              0.6336073863202815,
+              0.7048146004885886
+            ],
+            "observed_fraction": [
+              0.504,
+              0.584,
+              0.472,
+              0.488,
+              0.432,
+              0.416,
+              0.472,
+              0.632
+            ]
+          },
+          "confusion_matrix": [
+            [
+              114,
+              386
+            ],
+            [
+              134,
+              366
+            ]
+          ],
+          "correlation": 0.03232930443542079,
+          "directional_accuracy": 0.484,
+          "f1": 0.5846645367412141,
+          "mae": 0.021917494473631966,
+          "majority_class_accuracy": 0.5,
+          "precision": 0.4867021276595745,
+          "r2": -0.2478220277203005,
+          "recall": 0.732,
+          "rmse": 0.028811227095851714,
+          "roc_auc": 0.504604,
+          "rows": 1000
+        },
+        "realized_pnl": 764.272607825541
+      },
+      "JPM": {
+        "prediction_metrics": {
+          "accuracy": 0.482,
+          "brier_score": 0.265706002138726,
+          "calibration": {
+            "mean_probability": [
+              0.3756447125164363,
+              0.48377840094450136,
+              0.5225627263937817,
+              0.5451579085274506,
+              0.5643235005162143,
+              0.5833638216692099,
+              0.6178723048555479,
+              0.6984836381860535
+            ],
+            "observed_fraction": [
+              0.648,
+              0.56,
+              0.544,
+              0.504,
+              0.52,
+              0.416,
+              0.544,
+              0.504
+            ]
+          },
+          "confusion_matrix": [
+            [
+              90,
+              380
+            ],
+            [
+              138,
+              392
+            ]
+          ],
+          "correlation": -0.03027979987041558,
+          "directional_accuracy": 0.475,
+          "f1": 0.6021505376344086,
+          "mae": 0.034871533710626956,
+          "majority_class_accuracy": 0.53,
+          "precision": 0.5077720207253886,
+          "r2": -0.12749672970293524,
+          "recall": 0.7396226415094339,
+          "rmse": 0.047204798042380994,
+          "roc_auc": 0.4571798474508229,
+          "rows": 1000
+        },
+        "realized_pnl": 3390.4698755141726
+      },
+      "MSFT": {
+        "prediction_metrics": {
+          "accuracy": 0.522,
+          "brier_score": 0.25364138837194944,
+          "calibration": {
+            "mean_probability": [
+              0.34030667435074224,
+              0.4648873119628527,
+              0.5005895928358741,
+              0.5337767803999712,
+              0.5594205179527169,
+              0.5782924153198149,
+              0.6100524846799443,
+              0.7023919226387786
+            ],
+            "observed_fraction": [
+              0.528,
+              0.648,
+              0.616,
+              0.52,
+              0.6,
+              0.592,
+              0.5793650793650794,
+              0.5483870967741935
+            ]
+          },
+          "confusion_matrix": [
+            [
+              126,
+              295
+            ],
+            [
+              183,
+              396
+            ]
+          ],
+          "correlation": 0.13260495506598283,
+          "directional_accuracy": 0.519,
+          "f1": 0.6236220472440945,
+          "mae": 0.0303864385031514,
+          "majority_class_accuracy": 0.579,
+          "precision": 0.573082489146165,
+          "r2": -0.056320001114130935,
+          "recall": 0.6839378238341969,
+          "rmse": 0.03885812795005505,
+          "roc_auc": 0.49792623041610773,
+          "rows": 1000
+        },
+        "realized_pnl": 9759.613655400517
+      },
+      "WMT": {
+        "prediction_metrics": {
+          "accuracy": 0.504,
+          "brier_score": 0.2601840986706469,
+          "calibration": {
+            "mean_probability": [
+              0.30888618370150245,
+              0.45218916237836687,
+              0.5134657047054256,
+              0.5441646036733274,
+              0.5647736912324209,
+              0.5960872948444882,
+              0.634937462948433,
+              0.6919669777460723
+            ],
+            "observed_fraction": [
+              0.47619047619047616,
+              0.532258064516129,
+              0.52,
+              0.544,
+              0.504,
+              0.552,
+              0.504,
+              0.512
+            ]
+          },
+          "confusion_matrix": [
+            [
+              127,
+              355
+            ],
+            [
+              141,
+              377
+            ]
+          ],
+          "correlation": 0.0226536465684977,
+          "directional_accuracy": 0.507,
+          "f1": 0.6032,
+          "mae": 0.02435279416697168,
+          "majority_class_accuracy": 0.518,
+          "precision": 0.5150273224043715,
+          "r2": -0.20167222901462178,
+          "recall": 0.7277992277992278,
+          "rmse": 0.034329170271118176,
+          "roc_auc": 0.5087052820455311,
+          "rows": 1000
+        },
+        "realized_pnl": -893.9258380925351
+      },
+      "XOM": {
+        "prediction_metrics": {
+          "accuracy": 0.509,
+          "brier_score": 0.2543406389469189,
+          "calibration": {
+            "mean_probability": [
+              0.37000755626791426,
+              0.48683076841899325,
+              0.5185828463642205,
+              0.5366154331761797,
+              0.5542558555982015,
+              0.5750172973993043,
+              0.6101116018039722,
+              0.7011812198806268
+            ],
+            "observed_fraction": [
+              0.552,
+              0.56,
+              0.448,
+              0.56,
+              0.488,
+              0.504,
+              0.552,
+              0.6
+            ]
+          },
+          "confusion_matrix": [
+            [
+              94,
+              373
+            ],
+            [
+              118,
+              415
+            ]
+          ],
+          "correlation": -0.0375311567979718,
+          "directional_accuracy": 0.505,
+          "f1": 0.6283118849356548,
+          "mae": 0.03901079544170079,
+          "majority_class_accuracy": 0.533,
+          "precision": 0.5266497461928934,
+          "r2": -0.10568538268706185,
+          "recall": 0.7786116322701688,
+          "rmse": 0.0528983906075949,
+          "roc_auc": 0.5139668395530932,
+          "rows": 1000
+        },
+        "realized_pnl": -3693.7046015894352
+      }
+    },
+    "linear": {
+      "AAPL": {
+        "prediction_metrics": {
+          "accuracy": 0.563,
+          "brier_score": 0.2508913812491964,
+          "calibration": {
+            "mean_probability": [
+              0.43478272379075156,
+              0.49342945724019843,
+              0.5185239593522835,
+              0.5387413101471894,
+              0.5583083002722673,
+              0.5803585647606294,
+              0.6146978618487259,
+              0.6792082575372986
+            ],
+            "observed_fraction": [
+              0.472,
+              0.552,
+              0.592,
+              0.632,
+              0.664,
+              0.64,
+              0.48,
+              0.496
+            ]
+          },
+          "confusion_matrix": [
+            [
+              105,
+              329
+            ],
+            [
+              108,
+              458
+            ]
+          ],
+          "correlation": -0.004836628951898473,
+          "directional_accuracy": 0.525,
+          "f1": 0.6770140428677014,
+          "mae": 0.03279717869887294,
+          "majority_class_accuracy": 0.566,
+          "precision": 0.5819567979669632,
+          "r2": -0.029153266814293533,
+          "recall": 0.8091872791519434,
+          "rmse": 0.04305405791365287,
+          "roc_auc": 0.4998290208594551,
+          "rows": 1000
+        },
+        "realized_pnl": 2796.495040677786
+      },
+      "AMZN": {
+        "prediction_metrics": {
+          "accuracy": 0.523,
+          "brier_score": 0.2548035744161713,
+          "calibration": {
+            "mean_probability": [
+              0.42442830238816825,
+              0.4785832628890769,
+              0.5058267002826974,
+              0.527608605197506,
+              0.5497535695785196,
+              0.5826678284025747,
+              0.6259885703516279,
+              0.6871141285996921
+            ],
+            "observed_fraction": [
+              0.44,
+              0.576,
+              0.52,
+              0.592,
+              0.568,
+              0.544,
+              0.424,
+              0.56
+            ]
+          },
+          "confusion_matrix": [
+            [
+              141,
+              331
+            ],
+            [
+              146,
+              382
+            ]
+          ],
+          "correlation": -0.030204983267211605,
+          "directional_accuracy": 0.536,
+          "f1": 0.6156325543916197,
+          "mae": 0.03914411493007593,
+          "majority_class_accuracy": 0.528,
+          "precision": 0.5357643758765779,
+          "r2": -0.027585986844481214,
+          "recall": 0.7234848484848485,
+          "rmse": 0.05252958717781071,
+          "roc_auc": 0.5042212378017463,
+          "rows": 1000
+        },
+        "realized_pnl": -12249.469245440723
+      },
+      "GOOGL": {
+        "prediction_metrics": {
+          "accuracy": 0.524,
+          "brier_score": 0.25627291264664737,
+          "calibration": {
+            "mean_probability": [
+              0.4379731053063627,
+              0.494299965519212,
+              0.5188705709666618,
+              0.539935764213261,
+              0.561145104926058,
+              0.5862582282352437,
+              0.622904655244161,
+              0.676501585439888
+            ],
+            "observed_fraction": [
+              0.504,
+              0.632,
+              0.64,
+              0.624,
+              0.536,
+              0.488,
+              0.432,
+              0.512
+            ]
+          },
+          "confusion_matrix": [
+            [
+              94,
+              360
+            ],
+            [
+              116,
+              430
+            ]
+          ],
+          "correlation": -0.03071625613176418,
+          "directional_accuracy": 0.513,
+          "f1": 0.6437125748502994,
+          "mae": 0.03335496386252618,
+          "majority_class_accuracy": 0.546,
+          "precision": 0.5443037974683544,
+          "r2": -0.04289541284277498,
+          "recall": 0.7875457875457875,
+          "rmse": 0.043620429086537314,
+          "roc_auc": 0.4566168046344258,
+          "rows": 1000
+        },
+        "realized_pnl": -8408.24160100055
+      },
+      "JNJ": {
+        "prediction_metrics": {
+          "accuracy": 0.478,
+          "brier_score": 0.2648478914631631,
+          "calibration": {
+            "mean_probability": [
+              0.44020587202318545,
+              0.4929702990842624,
+              0.5208623261803218,
+              0.545595801569931,
+              0.5690107368805467,
+              0.5972994675459021,
+              0.6328532457891939,
+              0.6927840016205994
+            ],
+            "observed_fraction": [
+              0.512,
+              0.608,
+              0.552,
+              0.488,
+              0.432,
+              0.48,
+              0.432,
+              0.496
+            ]
+          },
+          "confusion_matrix": [
+            [
+              95,
+              405
+            ],
+            [
+              117,
+              383
+            ]
+          ],
+          "correlation": 0.05224309300363576,
+          "directional_accuracy": 0.488,
+          "f1": 0.59472049689441,
+          "mae": 0.02006308903205533,
+          "majority_class_accuracy": 0.5,
+          "precision": 0.4860406091370558,
+          "r2": -0.03687349500474246,
+          "recall": 0.766,
+          "rmse": 0.02626324095636858,
+          "roc_auc": 0.45852400000000004,
+          "rows": 1000
+        },
+        "realized_pnl": -655.9196460871024
+      },
+      "JPM": {
+        "prediction_metrics": {
+          "accuracy": 0.506,
+          "brier_score": 0.2564464372649524,
+          "calibration": {
+            "mean_probability": [
+              0.43286724892961936,
+              0.499071712846709,
+              0.5266800353855898,
+              0.5461441326592542,
+              0.5658822695350645,
+              0.5893395448083193,
+              0.6195143629072369,
+              0.6784780031045284
+            ],
+            "observed_fraction": [
+              0.544,
+              0.608,
+              0.584,
+              0.424,
+              0.488,
+              0.512,
+              0.512,
+              0.568
+            ]
+          },
+          "confusion_matrix": [
+            [
+              81,
+              389
+            ],
+            [
+              105,
+              425
+            ]
+          ],
+          "correlation": 0.035229829270567274,
+          "directional_accuracy": 0.486,
+          "f1": 0.6324404761904762,
+          "mae": 0.03262317076694896,
+          "majority_class_accuracy": 0.53,
+          "precision": 0.5221130221130221,
+          "r2": -0.026103851141004553,
+          "recall": 0.8018867924528302,
+          "rmse": 0.04503230294398251,
+          "roc_auc": 0.4848695303091128,
+          "rows": 1000
+        },
+        "realized_pnl": 3645.0700819441954
+      },
+      "MSFT": {
+        "prediction_metrics": {
+          "accuracy": 0.564,
+          "brier_score": 0.2494327739717646,
+          "calibration": {
+            "mean_probability": [
+              0.4271913912614839,
+              0.49521767900707697,
+              0.5214920030522172,
+              0.5423338803027596,
+              0.5649022722373391,
+              0.5870987160328923,
+              0.6238242676325261,
+              0.6898920771485302
+            ],
+            "observed_fraction": [
+              0.528,
+              0.552,
+              0.672,
+              0.616,
+              0.56,
+              0.6,
+              0.512,
+              0.592
+            ]
+          },
+          "confusion_matrix": [
+            [
+              94,
+              327
+            ],
+            [
+              109,
+              470
+            ]
+          ],
+          "correlation": 0.03571625615842615,
+          "directional_accuracy": 0.534,
+          "f1": 0.6831395348837209,
+          "mae": 0.029219276075119274,
+          "majority_class_accuracy": 0.579,
+          "precision": 0.589711417816813,
+          "r2": -0.02114276414034677,
+          "recall": 0.8117443868739206,
+          "rmse": 0.03820562903863753,
+          "roc_auc": 0.49734368782280863,
+          "rows": 1000
+        },
+        "realized_pnl": 1982.118661415705
+      },
+      "WMT": {
+        "prediction_metrics": {
+          "accuracy": 0.53,
+          "brier_score": 0.2591983969924644,
+          "calibration": {
+            "mean_probability": [
+              0.4350354070023166,
+              0.4961263710833519,
+              0.5260723678449364,
+              0.545299368453071,
+              0.5666101010075035,
+              0.5962901483160729,
+              0.6350693881327422,
+              0.6959634222571895
+            ],
+            "observed_fraction": [
+              0.456,
+              0.504,
+              0.576,
+              0.632,
+              0.544,
+              0.48,
+              0.504,
+              0.448
+            ]
+          },
+          "confusion_matrix": [
+            [
+              105,
+              377
+            ],
+            [
+              93,
+              425
+            ]
+          ],
+          "correlation": 0.05424132516187949,
+          "directional_accuracy": 0.523,
+          "f1": 0.6439393939393939,
+          "mae": 0.022343477255877237,
+          "majority_class_accuracy": 0.518,
+          "precision": 0.529925187032419,
+          "r2": -0.015093393867996907,
+          "recall": 0.8204633204633205,
+          "rmse": 0.03155173859441929,
+          "roc_auc": 0.48631826847594484,
+          "rows": 1000
+        },
+        "realized_pnl": 8884.882968311149
+      },
+      "XOM": {
+        "prediction_metrics": {
+          "accuracy": 0.515,
+          "brier_score": 0.2529581751975658,
+          "calibration": {
+            "mean_probability": [
+              0.41075661217426673,
+              0.48388755847410075,
+              0.5102902652514314,
+              0.5320328724347486,
+              0.5519646025876971,
+              0.5772586949809159,
+              0.6071652897095376,
+              0.6483729133314317
+            ],
+            "observed_fraction": [
+              0.52,
+              0.528,
+              0.544,
+              0.44,
+              0.56,
+              0.56,
+              0.464,
+              0.648
+            ]
+          },
+          "confusion_matrix": [
+            [
+              121,
+              346
+            ],
+            [
+              139,
+              394
+            ]
+          ],
+          "correlation": -0.008973145909692436,
+          "directional_accuracy": 0.515,
+          "f1": 0.6190102120974077,
+          "mae": 0.03782265892076838,
+          "majority_class_accuracy": 0.533,
+          "precision": 0.5324324324324324,
+          "r2": -0.05055873696966362,
+          "recall": 0.7392120075046904,
+          "rmse": 0.05156284177256542,
+          "roc_auc": 0.5205876799337916,
+          "rows": 1000
+        },
+        "realized_pnl": -7492.3316198966495
+      }
+    },
+    "random_forest": {
+      "AAPL": {
+        "prediction_metrics": {
+          "accuracy": 0.548,
+          "brier_score": 0.2543573250094812,
+          "calibration": {
+            "mean_probability": [
+              0.32026129151972366,
+              0.4780040377525101,
+              0.5246643300408509,
+              0.5449553599590883,
+              0.5575117965758056,
+              0.578418243882137,
+              0.6071595521386312,
+              0.7151713404840419
+            ],
+            "observed_fraction": [
+              0.576,
+              0.496,
+              0.48,
+              0.616,
+              0.568,
+              0.584,
+              0.6,
+              0.608
+            ]
+          },
+          "confusion_matrix": [
+            [
+              105,
+              329
+            ],
+            [
+              123,
+              443
+            ]
+          ],
+          "correlation": 0.08158827695694698,
+          "directional_accuracy": 0.556,
+          "f1": 0.6621823617339312,
+          "mae": 0.03364394365282744,
+          "majority_class_accuracy": 0.566,
+          "precision": 0.5738341968911918,
+          "r2": -0.0855727351893445,
+          "recall": 0.7826855123674912,
+          "rmse": 0.04421845109153205,
+          "roc_auc": 0.5358689811271596,
+          "rows": 1000
+        },
+        "realized_pnl": 2647.8286278502874
+      },
+      "AMZN": {
+        "prediction_metrics": {
+          "accuracy": 0.522,
+          "brier_score": 0.25429872341002113,
+          "calibration": {
+            "mean_probability": [
+              0.3303577618258807,
+              0.4811951479259561,
+              0.5186965308027859,
+              0.5394059205128591,
+              0.5568134367651668,
+              0.5762595568686386,
+              0.6088789848545347,
+              0.7123213301199622
+            ],
+            "observed_fraction": [
+              0.528,
+              0.488,
+              0.568,
+              0.496,
+              0.472,
+              0.52,
+              0.512,
+              0.64
+            ]
+          },
+          "confusion_matrix": [
+            [
+              111,
+              361
+            ],
+            [
+              117,
+              411
+            ]
+          ],
+          "correlation": 0.1099135244947916,
+          "directional_accuracy": 0.544,
+          "f1": 0.6323076923076923,
+          "mae": 0.03958810228037301,
+          "majority_class_accuracy": 0.528,
+          "precision": 0.5323834196891192,
+          "r2": -0.028758611556444214,
+          "recall": 0.7784090909090909,
+          "rmse": 0.05255955057256441,
+          "roc_auc": 0.5263325789676425,
+          "rows": 1000
+        },
+        "realized_pnl": 10045.1792150624
+      },
+      "GOOGL": {
+        "prediction_metrics": {
+          "accuracy": 0.479,
+          "brier_score": 0.2658743054296807,
+          "calibration": {
+            "mean_probability": [
+              0.29178062794021914,
+              0.4608548426586836,
+              0.5075606428799087,
+              0.534270159490734,
+              0.5528108233067893,
+              0.571610844050586,
+              0.5941001522971823,
+              0.7126332035173046
+            ],
+            "observed_fraction": [
+              0.608,
+              0.632,
+              0.52,
+              0.504,
+              0.576,
+              0.592,
+              0.384,
+              0.552
+            ]
+          },
+          "confusion_matrix": [
+            [
+              110,
+              344
+            ],
+            [
+              177,
+              369
+            ]
+          ],
+          "correlation": 0.0643718127319363,
+          "directional_accuracy": 0.501,
+          "f1": 0.5861795075456712,
+          "mae": 0.034545983304288104,
+          "majority_class_accuracy": 0.546,
+          "precision": 0.517531556802244,
+          "r2": -0.08947902991357348,
+          "recall": 0.6758241758241759,
+          "rmse": 0.04458399614045951,
+          "roc_auc": 0.46249253683174385,
+          "rows": 1000
+        },
+        "realized_pnl": 8869.483017613013
+      },
+      "JNJ": {
+        "prediction_metrics": {
+          "accuracy": 0.467,
+          "brier_score": 0.27342657615887156,
+          "calibration": {
+            "mean_probability": [
+              0.23084243496080456,
+              0.43271402588805424,
+              0.5361342718690846,
+              0.5599860056431398,
+              0.5730127236000083,
+              0.5862985311897576,
+              0.6195965527750766,
+              0.7172483703055962
+            ],
+            "observed_fraction": [
+              0.528,
+              0.584,
+              0.584,
+              0.44,
+              0.448,
+              0.368,
+              0.496,
+              0.552
+            ]
+          },
+          "confusion_matrix": [
+            [
+              103,
+              397
+            ],
+            [
+              136,
+              364
+            ]
+          ],
+          "correlation": 0.05406677884334698,
+          "directional_accuracy": 0.501,
+          "f1": 0.5773195876288659,
+          "mae": 0.0217994203184452,
+          "majority_class_accuracy": 0.5,
+          "precision": 0.4783180026281209,
+          "r2": -0.27537806007258414,
+          "recall": 0.728,
+          "rmse": 0.02912761345392057,
+          "roc_auc": 0.47726799999999997,
+          "rows": 1000
+        },
+        "realized_pnl": -1106.097348412668
+      },
+      "JPM": {
+        "prediction_metrics": {
+          "accuracy": 0.494,
+          "brier_score": 0.26827573013076966,
+          "calibration": {
+            "mean_probability": [
+              0.34110541420417734,
+              0.49592199249855684,
+              0.5400962132101392,
+              0.5525806280804461,
+              0.5619095951321258,
+              0.580181951400442,
+              0.6088667977114784,
+              0.7211608304619637
+            ],
+            "observed_fraction": [
+              0.64,
+              0.528,
+              0.528,
+              0.544,
+              0.504,
+              0.44,
+              0.48,
+              0.576
+            ]
+          },
+          "confusion_matrix": [
+            [
+              71,
+              399
+            ],
+            [
+              107,
+              423
+            ]
+          ],
+          "correlation": -0.025791336153977364,
+          "directional_accuracy": 0.492,
+          "f1": 0.6257396449704142,
+          "mae": 0.03517361223845087,
+          "majority_class_accuracy": 0.53,
+          "precision": 0.5145985401459854,
+          "r2": -0.1485537481674124,
+          "recall": 0.7981132075471699,
+          "rmse": 0.04764355506473709,
+          "roc_auc": 0.46326776395022073,
+          "rows": 1000
+        },
+        "realized_pnl": 8193.360038755443
+      },
+      "MSFT": {
+        "prediction_metrics": {
+          "accuracy": 0.528,
+          "brier_score": 0.25512466245081533,
+          "calibration": {
+            "mean_probability": [
+              0.30651234261306953,
+              0.465610002204074,
+              0.5171789568224155,
+              0.5442502604080203,
+              0.5589955786436412,
+              0.5750827947942656,
+              0.5976894507021615,
+              0.7099610897915071
+            ],
+            "observed_fraction": [
+              0.592,
+              0.616,
+              0.552,
+              0.536,
+              0.616,
+              0.6507936507936508,
+              0.43548387096774194,
+              0.632
+            ]
+          },
+          "confusion_matrix": [
+            [
+              106,
+              315
+            ],
+            [
+              157,
+              422
+            ]
+          ],
+          "correlation": 0.12934249424549418,
+          "directional_accuracy": 0.551,
+          "f1": 0.6413373860182371,
+          "mae": 0.030381383564779922,
+          "majority_class_accuracy": 0.579,
+          "precision": 0.5725915875169606,
+          "r2": -0.07232499279018545,
+          "recall": 0.7288428324697754,
+          "rmse": 0.03915140361449653,
+          "roc_auc": 0.49587912651430305,
+          "rows": 1000
+        },
+        "realized_pnl": 7610.122139629153
+      },
+      "WMT": {
+        "prediction_metrics": {
+          "accuracy": 0.516,
+          "brier_score": 0.26026572492193883,
+          "calibration": {
+            "mean_probability": [
+              0.2703171893749992,
+              0.45557287580171973,
+              0.5262146459478668,
+              0.5538114018261143,
+              0.5668251585492067,
+              0.5916844301855648,
+              0.624658112776475,
+              0.7027046471804442
+            ],
+            "observed_fraction": [
+              0.432,
+              0.576,
+              0.568,
+              0.584,
+              0.48,
+              0.464,
+              0.432,
+              0.608
+            ]
+          },
+          "confusion_matrix": [
+            [
+              123,
+              359
+            ],
+            [
+              125,
+              393
+            ]
+          ],
+          "correlation": 0.005179802543277568,
+          "directional_accuracy": 0.533,
+          "f1": 0.6188976377952756,
+          "mae": 0.024562629120349094,
+          "majority_class_accuracy": 0.518,
+          "precision": 0.5226063829787234,
+          "r2": -0.2331130674526356,
+          "recall": 0.7586872586872587,
+          "rmse": 0.03477536879913443,
+          "roc_auc": 0.5009472276069786,
+          "rows": 1000
+        },
+        "realized_pnl": 2790.6923749244975
+      },
+      "XOM": {
+        "prediction_metrics": {
+          "accuracy": 0.519,
+          "brier_score": 0.25538129640630236,
+          "calibration": {
+            "mean_probability": [
+              0.34371678581045184,
+              0.48955865763780515,
+              0.5337162548180281,
+              0.5462013952238435,
+              0.5537781722656137,
+              0.5694965751061747,
+              0.601406579120187,
+              0.7116457181001387
+            ],
+            "observed_fraction": [
+              0.552,
+              0.496,
+              0.576,
+              0.56,
+              0.464,
+              0.496,
+              0.512,
+              0.608
+            ]
+          },
+          "confusion_matrix": [
+            [
+              90,
+              377
+            ],
+            [
+              104,
+              429
+            ]
+          ],
+          "correlation": -0.04721015200456782,
+          "directional_accuracy": 0.515,
+          "f1": 0.6407766990291263,
+          "mae": 0.03930016735211427,
+          "majority_class_accuracy": 0.533,
+          "precision": 0.532258064516129,
+          "r2": -0.1239942670068992,
+          "recall": 0.8048780487804879,
+          "rmse": 0.0533345608005932,
+          "roc_auc": 0.5059438915917738,
+          "rows": 1000
+        },
+        "realized_pnl": -4966.752208267537
+      }
+    }
+  },
+  "trade_concentration": {
+    "gradient_boosting": {
+      "closed_partial_lots": 342,
+      "note": "Weighted-average partial lots, not independent trades. Not a counterfactual strategy.",
+      "positive_pnl": 206684.15509295432,
+      "top5_positive_pnl_fraction": 0.14293107268823188
+    },
+    "linear": {
+      "closed_partial_lots": 381,
+      "note": "Weighted-average partial lots, not independent trades. Not a counterfactual strategy.",
+      "positive_pnl": 164212.6909785096,
+      "top5_positive_pnl_fraction": 0.1627924228491526
+    },
+    "random_forest": {
+      "closed_partial_lots": 328,
+      "note": "Weighted-average partial lots, not independent trades. Not a counterfactual strategy.",
+      "positive_pnl": 151957.78477731682,
+      "top5_positive_pnl_fraction": 0.15899870158820567
+    }
+  },
+  "warning": "Exploratory, survivor-biased, retrospective adjusted-price research. No selection or positive-backtest optimization."
+}
