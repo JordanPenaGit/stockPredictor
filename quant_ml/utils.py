@@ -21,6 +21,17 @@ def data_hash(prices):
     for s in sorted(prices):h.update(s.encode());h.update(pd.util.hash_pandas_object(prices[s],index=True).values.tobytes())
     return h.hexdigest()
 
+def source_hash(root=None):
+    root=Path(root) if root is not None else Path(__file__).resolve().parents[1]
+    paths=sorted([*root.glob('*.py'),*(root/'quant_ml').rglob('*.py')])
+    h=hashlib.sha256()
+    for path in paths:
+        h.update(path.relative_to(root).as_posix().encode());h.update(b'\0');h.update(path.read_bytes());h.update(b'\0')
+    return h.hexdigest()
+
 def versions():
-    from importlib.metadata import version
-    return {'python':platform.python_version(),**{k:version(k) for k in ['numpy','pandas','scikit-learn','scipy','yfinance','joblib','matplotlib']}}
+    from importlib.metadata import version,PackageNotFoundError
+    result={'python':platform.python_version(),**{k:version(k) for k in ['numpy','pandas','scikit-learn','scipy','yfinance','joblib','matplotlib']}}
+    try:result['xgboost']=version('xgboost')
+    except PackageNotFoundError:pass
+    return result

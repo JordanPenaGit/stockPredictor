@@ -7,8 +7,8 @@
 
 ## Confirmed defects
 - Missing tracked model package made clean-clone imports fail. Fixed A.
-- Last-open rebalance could open and instantly liquidate positions; annualization counted entry fees as an extra elapsed day. Fixed B.
-- Insufficient input/config/calendar validation, unstable high-fee NAV iteration and frozen refits using mutable registry defaults. Fixed A/B with regression tests.
+- Last-open rebalance could open and instantly liquidate positions; annualization counted entry fees as an extra elapsed day. Reviewer fix pending Phase B verification.
+- Insufficient input/config/calendar validation, unstable high-fee NAV iteration and frozen refits using mutable registry defaults. Restored A; pending Phase B regression verification.
 - Original model run lacks immutable raw data snapshot; old results cannot be exactly reconstructed from revised cache. Preserve, do not repair evidence.
 - Holdout 2024–2026 has already been viewed. New names/seeds do not restore independence.
 
