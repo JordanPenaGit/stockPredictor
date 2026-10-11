@@ -39,3 +39,15 @@ A fresh isolated clone installed the dependency lock and completed deterministic
 integration plus fresh real-data bounded smoke without any old ignored artifacts.
 All 38 original files and 68 newly frozen research artifacts verified by SHA-256.
 Scientific limits (PTI/delistings/true executable quotes/selection) remain unresolved.
+
+## Phase E closure and remaining scope
+Final gates: 62 passing tests including forward timing/maturity and original
+train/freeze/assess/reuse integration. A newly confirmed governance risk was that
+ignored local audit absence in a clone could look like untouched data; historical
+assessment now always states exploratory and the viewed status is tracked.
+New access events, bundles and current outputs cannot replace prior evidence.
+Prospective collection is implemented and tested, not yet performance evidence.
+No known code-level future-input leakage remains in exercised paths; this is NOT
+proof that retrospective Yahoo history was available historically. PIT universe,
+delisting outcomes, real executable auction quotes, variable impact, adequate
+independent regimes, calibrated uncertainty and a predictive edge remain unresolved.

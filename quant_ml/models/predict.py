@@ -11,6 +11,10 @@ from ..utils import save_json,source_hash,versions
 
 def current_predictions(run=None,symbols=None,refresh=True):
     run=resolve_run(run);bundle=load_bundle(run);c=bundle['config']
+    if '_manifest' in bundle:
+        frozen=bundle['_manifest']
+        if frozen.get('source_hash')!=source_hash() or frozen.get('versions')!=versions():
+            raise ValueError('Frozen source/dependencies unavailable or changed; current refit requires a compatible new protocol')
     import re
     requested=list(dict.fromkeys(s.strip().upper() for s in (c.universe if symbols is None else symbols)))
     if not requested or any(not re.fullmatch(r'[A-Z0-9^][A-Z0-9.^=-]{0,19}',s) for s in requested):
@@ -26,6 +30,8 @@ def current_predictions(run=None,symbols=None,refresh=True):
     candidates=panel[(panel.date==asof)&panel.ticker.isin(requested)]
     missing=set(requested)-set(candidates.ticker)
     if missing:raise ValueError(f'No fresh features for: {sorted(missing)}; refusing stale mixed-date screen')
+    if asof>=pd.Timestamp(date.today()):
+        raise ValueError('Current data contains an incomplete or future session')
     if (pd.Timestamp(date.today())-asof).days>7:
         raise ValueError('Market data is stale by more than seven calendar days; no current forecast')
     pair=fit_pair(training,features,bundle['selected_model'],c,template=bundle['frozen_pair'])

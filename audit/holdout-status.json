@@ -1,0 +1,8 @@
+{
+  "recorded_on": "2026-10-11",
+  "project": "stockPredictor",
+  "status": "already_viewed_not_independent",
+  "interval_start": "2024-01-01",
+  "historical_information_seen_through": "2026-10-11",
+  "rule": "Cloning, renaming runs, changing seeds or deleting local ignored artifacts cannot restore independence. Historical assessment remains exploratory; only future timestamped captures can demonstrate new observation timing."
+}

@@ -2,7 +2,7 @@
 from pathlib import Path
 from dataclasses import replace
 from datetime import datetime,timezone
-import json, logging, os, re
+import json, logging, os, re, hashlib
 import joblib
 import pandas as pd
 from .config import ROOT
@@ -12,7 +12,7 @@ from .models.train import fit_pair,predict_pair,walk_forward,evaluate
 from .models.interpret import importance
 from .backtest.engine import simulate
 from .backtest.metrics import performance
-from .utils import save_json,fingerprint,data_hash,versions,source_hash
+from .utils import save_json,fingerprint,data_hash,versions,source_hash,save_new_json
 LOG=logging.getLogger(__name__)
 
 def validate_run(run):
@@ -28,6 +28,8 @@ def load_bundle(run):
     run=validate_run(run);folder=ROOT/'models'/run;path=folder/'bundle.joblib'
     if not path.exists():raise FileNotFoundError(f'Train first: missing {path}')
     manifest=json.loads((folder/'manifest.json').read_text())
+    if manifest.get('bundle_sha256') and hashlib.sha256(path.read_bytes()).hexdigest()!=manifest['bundle_sha256']:
+        raise ValueError('Frozen bundle bytes changed')
     bundle=joblib.load(path)
     config=bundle['config'];config.validate()
     if manifest.get('run')!=run or fingerprint(config.dict())!=manifest.get('config_hash') or config.dict()!=manifest.get('config'):
@@ -38,6 +40,7 @@ def load_bundle(run):
     for pair in bundle['frozen_pair'].values():
         if hasattr(pair,'feature_names_in_'):
             validate_features(pair.feature_names_in_,bundle)
+    bundle['_manifest']=manifest
     return bundle
 
 def resolve_run(run=None):
@@ -53,7 +56,7 @@ def train_research(config,run,refresh=False):
     if missing:raise ValueError(f'Model dependencies unavailable: {sorted(missing)}')
     folder=ROOT/'models'/run;result=ROOT/'results'/run
     if folder.exists() or result.exists():raise FileExistsError('Run already frozen. Reuse it; never overwrite an evaluated artifact. Choose a genuinely new protocol/run if needed; holdout audit persists.')
-    if (ROOT/'models'/'holdout_audit.json').exists():
+    if ((ROOT/'models'/'holdout_audit.json').exists() or any((ROOT/'models'/'holdout_access').glob('*-started.json'))):
         LOG.warning('Holdout has been viewed before. A new run is exploratory; it is NOT an independent untouched test.')
     data=MarketData().universe(config,refresh);panel,features=make_dataset(data,config)
     folder.mkdir(parents=True,exist_ok=False);result.mkdir(parents=True,exist_ok=False)
@@ -78,11 +81,14 @@ def train_research(config,run,refresh=False):
     if config.training_window:
         available=sorted(panel.loc[mature,'date'].unique())[-config.training_window:];mature &= panel.date.isin(available)
     frozen=fit_pair(panel[mature],features,selected,config)
-    manifest={'run':run,'status':'selection_frozen_historical_exploratory','frozen_at':datetime.now(timezone.utc).isoformat(),'config':config.dict(),'selected_model':selected,'selection_rule':'highest costed validation Sharpe; RMSE tie-break','features':features,'data_hash':data_hash(data),'config_hash':fingerprint(config.dict()),'versions':versions(),'source_hash':source_hash(),'train_period':[str(panel.loc[mature,'date'].min().date()),str(panel.loc[mature,'date'].max().date())],'last_training_label_end':str(panel.loc[mature,'target_end'].max().date()),'validation_period':[config.validation_start,config.test_start],'test_period':[config.test_start,config.end],'prior_holdout_viewed':(ROOT/'models'/'holdout_audit.json').exists(),'hyperparameters':{task:frozen[task].named_steps['model'].get_params() for task in frozen},'validation':details,'folds':all_folds}
+    manifest={'run':run,'status':'selection_frozen_historical_exploratory','frozen_at':datetime.now(timezone.utc).isoformat(),'config':config.dict(),'selected_model':selected,'selection_rule':'highest costed validation Sharpe; RMSE tie-break','features':features,'data_hash':data_hash(data),'config_hash':fingerprint(config.dict()),'versions':versions(),'source_hash':source_hash(),'train_period':[str(panel.loc[mature,'date'].min().date()),str(panel.loc[mature,'date'].max().date())],'last_training_label_end':str(panel.loc[mature,'target_end'].max().date()),'validation_period':[config.validation_start,config.test_start],'test_period':[config.test_start,config.end],'prior_holdout_viewed':((ROOT/'models'/'holdout_audit.json').exists() or any((ROOT/'models'/'holdout_access').glob('*-started.json'))),'hyperparameters':{task:frozen[task].named_steps['model'].get_params() for task in frozen},'validation':details,'folds':all_folds}
     # Freeze metadata before any holdout predictions. No feature importance on test used for selection.
-    save_json(folder/'manifest.json',manifest);joblib.dump({'config':config,'features':features,'selected_model':selected,'frozen_pair':frozen},folder/'bundle.joblib')
+    joblib.dump({'config':config,'features':features,'selected_model':selected,'frozen_pair':frozen},folder/'bundle.joblib')
+    manifest['bundle_sha256']=hashlib.sha256((folder/'bundle.joblib').read_bytes()).hexdigest()
+    save_new_json(folder/'manifest.json',manifest)
     table.to_csv(result/'model_comparison.csv',index=False);save_json(result/'validation.json',details)
-    save_json(ROOT/'models'/'latest.json',{'run':run});print(table.to_string(index=False));print(f'Frozen model: {selected}; no independence implied. Run python3 backtest.py --run {run}')
+    if not (ROOT/'models'/'latest.json').exists():save_new_json(ROOT/'models'/'latest.json',{'run':run})
+    print(table.to_string(index=False));print(f'Frozen model: {selected}; no independence implied. Run python3 backtest.py --run {run}')
     return manifest
 
 def assess(run):
@@ -103,8 +109,8 @@ def assess(run):
     auditfile=ROOT/'models'/'holdout_audit.json'
     history=json.loads(auditfile.read_text()) if auditfile.exists() else []
     if any(item['run']==run for item in history):raise RuntimeError('Assessment previously started but incomplete. Preserve partial outputs and use explicit recovery after investigating; do not silently peek again.')
-    history.append({'run':run,'test_start':c.test_start,'end':c.end,'started_at':datetime.now(timezone.utc).isoformat(),'manifest_hash':fingerprint(manifest),'status':'started'})
-    save_json(auditfile,history)
+    event={'run':run,'test_start':c.test_start,'end':c.end,'started_at':datetime.now(timezone.utc).isoformat(),'manifest_hash':fingerprint(manifest),'status':'started'}
+    save_new_json(ROOT/'models'/'holdout_access'/f'{run}-started.json',event)
     # Frozen model family/hyperparameters; retraining uses only labels strictly matured at each fold.
     pred,fold_audit=walk_forward(panel,features,bundle['selected_model'],c,c.test_start,c.end,template=bundle['frozen_pair'])
     pred=pred[pred.date<data[c.benchmark].index[-1]]
@@ -129,12 +135,12 @@ def assess(run):
     costs={}
     for bps in [0,10,25]:
         alt=replace(c,commission_bps=bps/2,slippage_bps=bps/2);cc,tt,rr=simulate(data,pred,alt);costs[str(bps)]=performance(cc,tt,rr,c.starting_capital)
-    assessment={'run':run,'source_hash':source_hash(),'versions':versions(),'model':bundle['selected_model'],'test_performance':metrics,'prediction_metrics':model_metrics,'benchmarks':benchmarks,'annual':annual,'regimes':regimes,'cost_sensitivity_bps':costs,'holdout_independence':not manifest['prior_holdout_viewed'],'warning':'One selected, survivorship-biased universe; historical adjusted-price research, not a trading guarantee.'}
+    assessment={'run':run,'source_hash':source_hash(),'versions':versions(),'model':bundle['selected_model'],'test_performance':metrics,'prediction_metrics':model_metrics,'benchmarks':benchmarks,'annual':annual,'regimes':regimes,'cost_sensitivity_bps':costs,'holdout_independence':False,'independence_reason':'Historical assessment is exploratory; cloning/renaming does not reset tracked already-viewed status','warning':'One selected, survivorship-biased universe; historical adjusted-price research, not a trading guarantee.'}
     save_json(result/'assessment.json',assessment)
     from .research.plots import research_plots
     from .research.reports import write_report
     research_plots(result,curve,benchmark_curves,pred,permutation)
     write_report(result,manifest,assessment,permutation)
-    history[-1]['status']='complete';history[-1]['completed_at']=datetime.now(timezone.utc).isoformat();save_json(auditfile,history)
+    save_new_json(ROOT/'models'/'holdout_access'/f'{run}-complete.json',{**event,'status':'complete','completed_at':datetime.now(timezone.utc).isoformat()})
     print(json.dumps(metrics,indent=2));print(f'Report: {result / "report.md"}')
     return assessment

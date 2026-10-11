@@ -24,7 +24,7 @@
 - `quant_ml/backtest/`: strategy construction and a self-financing cash/adjusted-share ledger.
 - `quant_ml/research/`: Markdown reports and headless research/calibration charts.
 - `quant_ml/workflow.py`: validation-only selection, frozen metadata, data hashes,
-  one-time final assessment, and a local holdout-access audit.
+  one-time historical assessment, and append-only holdout-access events.
 
 ## Timing and leakage contract
 
@@ -76,8 +76,7 @@ present the same test interval as untouched.
 Analyze/screen perform a separate latest-data refit of the selected family on
 mature labels from the original training universe. They do not overwrite the
 frozen evaluated estimator. Requested additional tickers are candidates, not
-extra training stocks. Current predictions and report signals can be updated;
-the saved final-test predictions and assessment remain separate.
+extra training stocks. Current refits append unique records, never rewriting frozen reports or results.
 
 The displayed raw price is Yahoo’s latest daily close, not a live quote.
 Probabilities are **uncalibrated model estimates** of the label event; calibration
@@ -179,3 +178,17 @@ and SMA200 are ordinal allocation signals, not calibrated forecasts. Maintained
 arch circular-block bootstrap samples dates, not panel rows; fixed block
 sensitivity and unadjusted intervals are descriptive only. See
 AUDIT.md, RESEARCH_REPORT.md and audit/uncertainty-method.md for remaining limits.
+
+
+## Prospective collection and immutable history
+The tracked audit/holdout-status.json carries already-viewed status into clones.
+Historical assessment is always marked exploratory, even when ignored local audit
+files are absent. New started/completed access records are separate exclusive JSON
+files under models/holdout_access; old holdout_audit.json is read-only. Existing
+latest.json pointers are not replaced; specify --run explicitly for new artifacts.
+New bundles have byte hashes checked before load. Current inference rejects
+source/dependency drift instead of silently changing frozen feature definitions.
+See ROADMAP.md for actual after-close collection and matured-label evaluation.
+No future performance has yet been collected. The calendar is maintained
+pandas-market-calendars 5.5.0; its NYSE schedule handles planned holidays/early
+closes, not a guarantee against unforeseen exchange interruptions.

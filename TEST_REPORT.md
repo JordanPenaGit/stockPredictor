@@ -56,3 +56,25 @@ heavy custom resampling; dependencies installed and lock recaptured.
   reproducibility or independent performance. Ignored artifacts are not in git.
 - Reports retain poor predictive metrics and wide unadjusted intervals. No legacy
   holdout retraining/reassessment. Legacy saved metrics read descriptively only.
+
+## Phase E — future evidence / final scientific gate
+- Full suite: **62 passed** (3.249 s); compileall, pip check and git diff --check pass.
+- Added NYSE holiday/early-close, after-close +30min / next-open deadline,
+  no pre-freeze capture, actual matured-outcome integration, duplicate/tamper/code
+  drift refusal tests. Calendar implementation reused maintained package; no
+  custom holiday calendar. Fixture outcomes are NOT future market evidence.
+- Added real train->freeze->assess->reuse integration on temporary deterministic
+  fixtures: bundle byte hash, preserved legacy audit/pointer, new append-only
+  started/completed events. Historical assessments always exploratory; tracked
+  audit/holdout-status.json prevents a fresh-clone absence being mistaken for new
+  independence. Current source-incompatible legacy inference refuses instead of
+  silently changing feature definitions. Global stale/future bars and provider
+  date bounds/duplicates/invalid values explicitly checked.
+- Frozen legacy data/models/results/holdout files unchanged; no model or research
+  parameter changed because of performance. Prospective collection is manual,
+  no scheduler, no broker, no orders, no promised future return. See ROADMAP.md.
+- New code after c25ce83 is hardening/forward collection; the full development
+  result remains bound to c25ce83 and its recorded lock/source hashes, not silently
+  regenerated using later source. Exact replay can checkout that local commit
+  and explicitly supply its preserved snapshot; current clean-clone workflow is
+  separately verified below.

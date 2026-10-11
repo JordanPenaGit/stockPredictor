@@ -76,4 +76,20 @@ class ScientificTests(unittest.TestCase):
             pipeline.predict(future[names])
             np.testing.assert_array_equal(pipeline['select'].get_support(),support)
 
+    def test_uniform_stale_market_fails_before_current_fit(self):
+        from quant_ml.models.predict import current_predictions
+        f=fixture(500);c=replace(Config(),universe=['A'],train_min_dates=80)
+        data={'A':f,'SPY':f};_,features=make_dataset(data,c)
+        bundle={'config':c,'features':features,'selected_model':'linear'}
+        with patch('quant_ml.models.predict.load_bundle',return_value=bundle),patch('quant_ml.models.predict.MarketData') as market,patch('quant_ml.models.predict.fit_pair') as fit:
+            market.return_value.universe.return_value=data
+            with self.assertRaisesRegex(ValueError,'stale'):current_predictions('unit')
+            fit.assert_not_called()
+
+    def test_provider_bounds_duplicates_and_bad_values_fail(self):
+        from quant_ml.data.downloader import validate_frame,DataError
+        f=fixture(20)
+        for bad,start,end in [(f,'2020-01-02','2021-01-01'),(f,'2020-01-01','2020-01-05'),(pd.concat([f,f.iloc[-1:]]),'2020-01-01','2021-01-01'),(f.assign(open=0),'2020-01-01','2021-01-01')]:
+            with self.assertRaises(DataError):validate_frame(bad,'A',start,end)
+
 if __name__=='__main__':unittest.main()

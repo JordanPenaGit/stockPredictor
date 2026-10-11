@@ -35,7 +35,7 @@ underscores, dots, or hyphens, beginning with a letter/digit; paths are rejected
 | `python3 screen.py` | `--top N` (default 20), `--tickers SYMBOL ...`, `--cached` | Separate latest-data refit and ranked candidates. |
 
 Training defaults to run `research-v1`; other commands resolve an omitted ID via
-`models/latest.json`. Training refuses a run that already has a frozen manifest.
+`models/latest.json`. Training refuses any existing model/result directory, including partial failures. Existing latest.json is preserved; use --run explicitly for new runs.
 Use an explicit new ID only for an intentional new experiment. Keep the shared
 holdout audit: a different ID does not undo previous test access.
 
@@ -137,3 +137,12 @@ full research or independent evidence. Output must not exist. Failures preserve
 frozen_protocol.json and FAILED.json; no silent retry or experiment exclusion.
 Outputs include summary, matched curves/orders/lots/predictions, fold audits,
 source/dependency/data hashes and a development-only snapshot.
+
+
+## Forward shadow CLI
+python3 forward.py init --root results/shadow-NEW-ID freezes a new fixed protocol.
+Then explicitly call capture after close+30min and before next open. evaluate
+requires --signal-date YYYY-MM-DD and refuses immature targets. No --asof/backdate
+flag exists. Inputs, refits, forecasts and matured outcomes are separate immutable
+records; failed attempts are preserved. There is no scheduler, broker, trade or
+net-portfolio-profit claim. See ROADMAP.md for review timing and evidence limits.

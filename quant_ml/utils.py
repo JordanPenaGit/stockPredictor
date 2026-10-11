@@ -35,3 +35,10 @@ def versions():
     try:result['xgboost']=version('xgboost')
     except PackageNotFoundError:pass
     return result
+
+
+def save_new_json(path,obj):
+    """Exclusive new record: never replace frozen evidence."""
+    path.parent.mkdir(parents=True,exist_ok=True)
+    with path.open('x') as handle:
+        json.dump(clean_json(obj),handle,indent=2,sort_keys=True,allow_nan=False)

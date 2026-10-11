@@ -38,11 +38,26 @@ class MarketData:
         if not re.fullmatch(r'[A-Z0-9^][A-Z0-9.^=-]{0,19}',symbol):raise DataError('Invalid ticker format')
         key=json.dumps([getattr(self.provider,'cache_namespace',type(self.provider).__name__)+'-adjusted-v1',symbol,start,end])
         cached=None if refresh else self.cache.get(key)
-        if cached is not None:return cached
+        if cached is not None:return validate_frame(cached,symbol,start,end)
         LOG.info('Downloading %s %s through %s',symbol,start,end)
-        data=self.provider.download(symbol,start,end)
+        data=validate_frame(self.provider.download(symbol,start,end),symbol,start,end)
         if data.empty:raise DataError(f'{symbol}: empty cleaned data')
         self.cache.put(key,data);return self.cache.get(key)
     def universe(self,config,refresh=False):
         # Fail loudly: silently dropping a failed ticker changes the historical universe.
         return {s:self.get(s,config.start,config.end,refresh) for s in [*config.universe,config.benchmark]}
+
+
+def validate_frame(frame,symbol,start,end):
+    if frame.empty:raise DataError(f'{symbol}: empty market data')
+    idx=frame.index
+    if not isinstance(idx,pd.DatetimeIndex) or not idx.is_unique or not idx.is_monotonic_increasing:
+        raise DataError(f'{symbol}: invalid market calendar')
+    if idx.min()<pd.Timestamp(start) or idx.max()>=pd.Timestamp(end):
+        raise DataError(f'{symbol}: data outside requested interval')
+    cols=['open','high','low','close','volume']
+    if not set(cols).issubset(frame.columns) or not np.isfinite(frame[cols].to_numpy()).all():
+        raise DataError(f'{symbol}: invalid OHLCV data')
+    if (frame[cols[:-1]]<=0).any().any() or (frame.volume<0).any():
+        raise DataError(f'{symbol}: invalid OHLCV values')
+    return frame
