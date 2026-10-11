@@ -1,0 +1,100 @@
+{
+  "name": "scientific-dev-20261011",
+  "label": "EXPLORATORY DEVELOPMENT ONLY; holdout already seen",
+  "data_start": "2015-01-01",
+  "data_end_exclusive": "2024-01-01",
+  "validation_start": "2020-01-01",
+  "source_cache_request_end": "2026-10-04",
+  "universe": [
+    "AAPL",
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "JPM",
+    "XOM",
+    "JNJ",
+    "WMT"
+  ],
+  "benchmark": "SPY",
+  "models": [
+    "linear",
+    "random_forest",
+    "gradient_boosting"
+  ],
+  "variants": [
+    "linear_alpha5",
+    "linear_alpha20",
+    "rf_leaf20",
+    "rf_leaf80",
+    "rf_window756"
+  ],
+  "horizon": 5,
+  "train_min_dates": 756,
+  "walk_forward_dates": 126,
+  "training_window": 0,
+  "seed": 42,
+  "feature_set": "all",
+  "select_features": 24,
+  "rebalance_days": 5,
+  "max_positions": 3,
+  "max_weight": 0.34,
+  "strategy": "ranking",
+  "sizing": "equal",
+  "return_threshold": 0,
+  "probability_threshold": 0.55,
+  "commission_bps": 5,
+  "slippage_bps": 5,
+  "starting_capital": 100000,
+  "baselines": [
+    "SPY_buyhold",
+    "equal_weight_buyhold",
+    "momentum60",
+    "trend200",
+    "historical_mean",
+    "naive_zero_cash"
+  ],
+  "cost_bps_per_side": [
+    0,
+    10,
+    25,
+    50
+  ],
+  "bootstrap": {
+    "library": "arch CircularBlockBootstrap",
+    "blocks": [
+      5,
+      20,
+      60
+    ],
+    "replications": 1000,
+    "seed": 42,
+    "interval": "95% percentile, descriptive, unadjusted for multiple comparisons",
+    "statistics": [
+      "annualized arithmetic paired net return difference vs SPY and equal_weight_buyhold",
+      "mean date-aggregated squared forecast error difference vs historical_mean"
+    ]
+  },
+  "diagnostics": [
+    "every calendar year",
+    "prior-close SPY SMA200 regime",
+    "per-stock realized PnL and metrics",
+    "remove each stock from allocation without refitting: conditional sensitivity only",
+    "largest five closed-lot PnL share; descriptive not independent trades",
+    "fixed hyperparameter neighborhoods",
+    "fixed 756-date RF training window",
+    "cost sensitivity on same forecasts"
+  ],
+  "gate": {
+    "decision": "No selection or deployment from these diagnostics. Exploratory promise requires all base models judged separately, not best-of-many.",
+    "economic": "positive costed excess vs SPY and equal-weight at 10 and 25 bps, positive excess in every year; drawdown no worse than equal-weight",
+    "predictive": "lower RMSE and Brier than historical mean; AUC > .5",
+    "uncertainty": "paired excess interval lower bound >0 for all blocks versus both controls, still NOT selection-adjusted proof",
+    "failure": "Report every failed gate, variant and exception. No parameter hunting or changes because of disappointing outcomes."
+  },
+  "limitations": [
+    "retrospective adjusted total-return proxy, not executable/PTI",
+    "current survivors, no delistings",
+    "2020-2023 previously used development, not new independent test",
+    "bootstrap approximate stationarity; cross-section aggregated by date; limited regimes; no significance claims"
+  ]
+}

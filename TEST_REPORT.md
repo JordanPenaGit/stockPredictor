@@ -25,3 +25,11 @@ Momentum60 and SMA200 are ordinal signals, not calibrated forecasts. SPY/full
 same-universe buy-hold differ in concentration/exposure from capped top-three
 strategies; fair dates/cost rules do not imply matched risk. Gate passed before
 any new real-data performance was inspected.
+
+## Phase D pre-execution gate
+56 tests passed, including deterministic end-to-end fixture twice, output collision
+refusal, preserved failed-attempt evidence, bound/calendar data validation and
+seeded block-bootstrap tests. Initial fixture equality exposed unnormalized NaN
+values for empty regime slices; fixed JSON-clean return consistency BEFORE market
+experiments. No model/period adjustment. arch 7.2.0 reused rather than implementing
+heavy custom resampling; dependencies installed and lock recaptured.
