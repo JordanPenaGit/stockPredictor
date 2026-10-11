@@ -1,0 +1,21 @@
+{
+  "verified_code_commit": "43901e03770010e66925d34f5880493e80d2aa8a",
+  "source_hash": "61ac6809e8cbe1cb23c7a6561cafa746a0712178e3ef9340154f4be238ceb1ca",
+  "tests_passed": 62,
+  "fresh_clone": "/tmp/stock-scientific-release",
+  "clone_dependencies": "new isolated .venv installed from tracked requirements-lock.txt",
+  "clone_workflow": "fresh Yahoo download; research.py --smoke; no old cache/models/results used",
+  "legacy_files_verified": 38,
+  "development_artifacts_verified": 68,
+  "legacy_inventory_sha256": "868de5c135b4f0beeaf42c765fd6cb132ab951581022d75d2ca9fe146a14092c",
+  "development_artifact_manifest_sha256": "397a3e0deee452b0250a97874685094e08ca9affebb403b9863c7f983b38394f",
+  "remote_main_unchanged": "49539f1b622aff46f93371643b2e80425f149c28",
+  "pushes": 0,
+  "broker_connections": 0,
+  "orders": 0,
+  "shadow_protocol": "results/shadow-scientific-20261011/protocol.json",
+  "shadow_first_signal_not_before": "2026-10-12",
+  "shadow_actual_forecasts": 0,
+  "shadow_guard_test": "October 11 capture refused before prospectively frozen signal day",
+  "scheduled_jobs_created": 0
+}

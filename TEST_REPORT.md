@@ -78,3 +78,26 @@ heavy custom resampling; dependencies installed and lock recaptured.
   regenerated using later source. Exact replay can checkout that local commit
   and explicitly supply its preserved snapshot; current clean-clone workflow is
   separately verified below.
+
+## Final clean release verification (after Phase E commit 43901e0)
+A THIRD actual local clone, /tmp/stock-scientific-release, installed the final
+tracked lock into a new isolated .venv. Full suite **62 passed in 3.214 s**;
+compileall, pip check and all SIX CLI --help commands passed. With no old ignored
+artifacts it downloaded real Yahoo history and completed:
+
+    .venv/bin/python research.py --smoke --output results/final-clean-download-smoke
+
+This is a deliberately bounded negative-result smoke, not independent validation.
+See audit/final-verification.json for the source and preservation fingerprints.
+All **38 original files** and **68 frozen development output files** verified.
+Live origin/main remained 49539f1b622aff46f93371643b2e80425f149c28; no push occurred.
+
+Initialized ONLY a local fixed shadow protocol at
+results/shadow-scientific-20261011/protocol.json. Actual October 11 capture was
+correctly refused (signal predates prospective freeze); no capture directory or
+future forecasts exist. Earliest signal date October 12, 2026 after NYSE close+30min,
+with computation before next session open. No scheduler or future work promise.
+
+Local phase commits: A d8e19e3 + 75e2de0; B c9eddb0; C 8c60a41;
+D predeclaration c25ce83 + evidence a32eee1; E 43901e0.
+This final documentation-only verification commit is identified by git log.

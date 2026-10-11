@@ -108,3 +108,9 @@ Classifier weakness, survivor universe, retrospective adjusted data and weak dev
 - No broker, order placement, paid source or remote push. See ROADMAP.md for hypotheses and future append-only evidence collection, not a promise of future performance.
 
 Failed experiments recorded by completed run: []. Any interrupted/failed directories remain separate evidence. See TEST_REPORT.md for commands and actual execution gates.
+
+Bootstrap intervals condition on the realized fitted-forecast sequences; they do
+not retrain estimators inside each resample and do not include model-selection,
+data-revision or all parameter uncertainty. All detailed closed-lot win rate,
+profit factor, order count and average trade-return metrics are retained in the
+tracked audit/scientific-dev-20261011/summary.json. Partial lots are not independent.
