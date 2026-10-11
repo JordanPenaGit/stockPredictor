@@ -19,7 +19,12 @@ def construct_weights(predictions,config):
     # Cap; remainder stays cash (no hidden redistribution/leverage).
     return dict(zip(p.ticker,np.minimum(raw,config.max_weight)))
 
-def simulate(prices,predictions,config,benchmark_symbol=None):
+def simulate(prices,predictions,config,benchmark_symbol=None,buy_hold_weights=None):
+    if benchmark_symbol is not None and buy_hold_weights is not None:
+        raise ValueError('Choose one buy-hold specification')
+    hold_weights=({benchmark_symbol:1.0} if benchmark_symbol is not None else buy_hold_weights)
+    if hold_weights is not None and set(hold_weights)-set(prices):
+        raise ValueError('Missing buy-hold prices')
     calendar=prices[config.benchmark].index
     if not isinstance(calendar,pd.DatetimeIndex) or not calendar.is_unique or not calendar.is_monotonic_increasing:
         raise ValueError('Benchmark calendar must be unique and increasing')
@@ -40,15 +45,15 @@ def simulate(prices,predictions,config,benchmark_symbol=None):
     # Fixed benchmark-session cadence, anchored at the first executable signal.
     # Off-cadence forecasts are informational; missing due signals are errors.
     due=calendar[first-1:last-1:config.rebalance_days]
-    if benchmark_symbol is None:
+    if hold_weights is None:
         missing=due.difference(dates)
         if len(missing):raise ValueError(f'Missing scheduled signal dates: {list(missing)}')
     for i,d in enumerate(sessions):
         prev=calendar[calendar.get_loc(d)-1]
         opening={s:float(f.at[d,'open']) for s,f in prices.items() if d in f.index}
         pre=portfolio.equity(opening);turnover=cost=0.0
-        if benchmark_symbol:
-            if i==0:turnover,cost=portfolio.rebalance({benchmark_symbol:1.0},opening,cost_rate,d)
+        if hold_weights is not None:
+            if i==0:turnover,cost=portfolio.rebalance(hold_weights,opening,cost_rate,d)
         elif i<len(sessions)-1 and i%config.rebalance_days==0 and prev in grouped:
             w=construct_weights(grouped[prev],config)
             turnover,cost=portfolio.rebalance(w,opening,cost_rate,d)

@@ -10,3 +10,4 @@
 ## Scientific mission (2026-10-11)
 A: d8e19e3 + 75e2de0, restored model source and fixed dependent clone import; clean isolated clone 19 tests, imports, CLI help and pip check pass. Working-tree integration 44 passed.
 B: critical gate passed, 49 tests. Timing, cadence, train-only transforms, future perturbation of predictions/orders, fees/terminal accounting and immutable-current-output fixes. Old artifacts hash-identical. Yahoo/PTI/delisting limitations unresolved, not solved by tests.
+C: 52 tests passed. SPY/equal-weight buyhold/momentum60/trend200/purged historical-mean/zero naive implemented; cash naive and buyhold shares/costs hand-checked. No real performance selection yet.

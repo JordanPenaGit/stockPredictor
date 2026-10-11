@@ -14,3 +14,14 @@
 - Limitation: no test converts retrospective Yahoo adjustments into point-in-time information; historical execution remains an explicit proxy. No real trade or broker interaction.
 
 Phase commit identifiers: `git log --oneline --grep='Phase '`. Later phase gates are appended after execution.
+
+## Phase C — baseline correctness gate
+Full unittest discovery: **52 passed**. Added explicit same-universe equal-weight
+buy-and-hold with drift and analytically verified both-side fees; all baselines
+share dates. Historical means/up-rates use only matured purged fold training;
+future-label perturbations leave earlier baselines unchanged. Naive zero/.5
+forecast has a cash allocation comparator (not arbitrary alphabetical tie trades).
+Momentum60 and SMA200 are ordinal signals, not calibrated forecasts. SPY/full
+same-universe buy-hold differ in concentration/exposure from capped top-three
+strategies; fair dates/cost rules do not imply matched risk. Gate passed before
+any new real-data performance was inspected.
